@@ -21,6 +21,18 @@ namespace Blood_and_Swords.FORMS
         {
 
         }
+
+        private void AppExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new loginForm().Show();
+        }
+
     }
 }
 

@@ -7,7 +7,7 @@ namespace Blood_and_Swords
         public loginForm()
         {
             InitializeComponent();
-            backgroundMusic.SoundLocation = "loginPanelSound.wav";
+            backgroundMusic.SoundLocation = @"..\..\..\sounds\loginPanelSound.wav";
         }
 
         private void loginForm_Load(object sender, EventArgs e)
