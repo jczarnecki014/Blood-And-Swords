@@ -39,7 +39,7 @@
             this.LoginTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AppExitBtn = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.LoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -106,6 +106,7 @@
             this.LoginButton.TabIndex = 6;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // pictureBox2
             // 
@@ -174,25 +175,24 @@
             this.Logo.TabIndex = 0;
             this.Logo.TabStop = false;
             // 
-            // button3
+            // AppExitBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(175)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(832, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 37);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.AppExitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(175)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
+            this.AppExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AppExitBtn.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AppExitBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AppExitBtn.Location = new System.Drawing.Point(832, 3);
+            this.AppExitBtn.Name = "AppExitBtn";
+            this.AppExitBtn.Size = new System.Drawing.Size(40, 37);
+            this.AppExitBtn.TabIndex = 9;
+            this.AppExitBtn.Text = "X";
+            this.AppExitBtn.UseVisualStyleBackColor = false;
+            this.AppExitBtn.Click += new System.EventHandler(this.AppExitBtn_Click);
             // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher1_Changed);
             // 
             // loginForm
             // 
@@ -200,7 +200,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 467);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.AppExitBtn);
             this.Controls.Add(this.LoginPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginForm";
@@ -228,7 +228,7 @@
         private Button button1;
         private Button LoginButton;
         private Button CreatNewAccountButton;
-        private Button button3;
+        private Button AppExitBtn;
         private FileSystemWatcher fileSystemWatcher1;
     }
 }
