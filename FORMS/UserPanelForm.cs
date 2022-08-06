@@ -12,10 +12,13 @@ namespace Blood_and_Swords.FORMS
 {
     public partial class UserPanelForm : Form
     {
-        public UserPanelForm()
+        User user;
+        public UserPanelForm(User user)
         {
             InitializeComponent();
             ArrmorPictureBoxHoverEfect();
+            this.user = user;
+            this.BodyArmorImg.Image = Image.FromFile(@"..\..\..\" + user.ChampionSet.BodyArmorId.ItemImgSrc);
         }
         private void ArrmorPictureBoxHoverEfect()
         {
@@ -41,10 +44,15 @@ namespace Blood_and_Swords.FORMS
             new BackgroundMusic("UserPanelForm");
         }
 
-        private void FightButton_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FightBTN_Click(object sender, EventArgs e)
         {
             this.Close();
-            new FighArena().Show();
+            new FighArena(user).Show();
         }
     }
 }

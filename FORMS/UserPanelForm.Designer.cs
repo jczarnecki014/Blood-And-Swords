@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPanelForm));
             this.MenuPanel = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.FightButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,8 +50,9 @@
             this.HeadImg = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.FightButton = new System.Windows.Forms.Button();
+            this.FightBTN = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,12 +71,50 @@
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))), ((int)(((byte)(84)))));
             this.MenuPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MenuPanel.Controls.Add(this.panel4);
             this.MenuPanel.Controls.Add(this.FightButton);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(1904, 65);
             this.MenuPanel.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(67)))), ((int)(((byte)(85)))), ((int)(((byte)(84)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.FightBTN);
+            this.panel4.Controls.Add(this.CloseButton);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1900, 65);
+            this.panel4.TabIndex = 1;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(175)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CloseButton.Location = new System.Drawing.Point(20, 13);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(85, 34);
+            this.CloseButton.TabIndex = 1;
+            this.CloseButton.Text = "Close";
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // FightButton
+            // 
+            this.FightButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(175)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
+            this.FightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FightButton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FightButton.Location = new System.Drawing.Point(1805, 10);
+            this.FightButton.Name = "FightButton";
+            this.FightButton.Size = new System.Drawing.Size(85, 34);
+            this.FightButton.TabIndex = 0;
+            this.FightButton.Text = "Fight";
+            this.FightButton.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -235,18 +277,18 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "equipment";
             // 
-            // FightButton
+            // FightBTN
             // 
-            this.FightButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(175)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
-            this.FightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FightButton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FightButton.Location = new System.Drawing.Point(1805, 10);
-            this.FightButton.Name = "FightButton";
-            this.FightButton.Size = new System.Drawing.Size(85, 34);
-            this.FightButton.TabIndex = 0;
-            this.FightButton.Text = "Fight";
-            this.FightButton.UseVisualStyleBackColor = false;
-            this.FightButton.Click += new System.EventHandler(this.FightButton_Click);
+            this.FightBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(175)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
+            this.FightBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FightBTN.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FightBTN.Location = new System.Drawing.Point(1803, 13);
+            this.FightBTN.Name = "FightBTN";
+            this.FightBTN.Size = new System.Drawing.Size(85, 34);
+            this.FightBTN.TabIndex = 2;
+            this.FightBTN.Text = "Fight";
+            this.FightBTN.UseVisualStyleBackColor = false;
+            this.FightBTN.Click += new System.EventHandler(this.FightBTN_Click);
             // 
             // UserPanelForm
             // 
@@ -268,6 +310,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UserPanelForm_Load);
             this.MenuPanel.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -309,5 +352,8 @@
         private Panel panel5;
         private Label label4;
         private Button FightButton;
+        private Panel panel4;
+        private Button CloseButton;
+        private Button FightBTN;
     }
 }

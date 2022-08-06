@@ -26,8 +26,16 @@ namespace Blood_and_Swords
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new UserPanelForm().Show();
+            if(Authentication.Start(LoginTextBox.Text,PasswordTextBox.Text))
+            {
+                dbAcces newSql = new dbAcces();
+                User user = newSql.GetUser(LoginTextBox.Text);
+                this.Hide();
+                new UserPanelForm(user).Show();
+            }
+            else{
+                MessageBox.Show("Nie uda³o siê");
+            }
         }
     }
 }

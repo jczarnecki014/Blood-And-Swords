@@ -1,0 +1,24 @@
+--Create database BasSql;
+
+create table Users
+(
+	UserId int,
+	UserName varchar(15),
+	UserPassword varchar(25),
+	UserEmail varchar(25),
+	ChampionName varchar(25),
+	ChampionMoney int,
+	ChampionLevel int,
+	ChampionAttributes int,
+	ChampionStats int,
+	ChampionSet int
+	primary key (UserId)
+);
+
+--create procedure dbo.GetPassword
+--	@EnteredUserName varchar(25)
+--as
+--begin
+--	select UserPassword From dbo.Users Where UserName = @EnteredUserName;
+--end
+

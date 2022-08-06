@@ -11,15 +11,28 @@ using System.Windows.Forms;
 namespace Blood_and_Swords.FORMS
 {
     public partial class FighArena : Form
-    {
-        public FighArena()
+    {   
+        User user;
+        public FighArena(User user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void FighArena_Load(object sender, EventArgs e)
         {
             new BackgroundMusic("FightPanelSound");
+        }
+
+        private void SkipFightButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new UserPanelForm(user).Show();
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
