@@ -1,13 +1,13 @@
 ﻿
     public class Sets
     {
-       public DefItems HelmetId { get; set; }
-       public DefItems BodyArmorId { get; set; }
-       public DefItems GlovesId{ get; set; }
-       public DefItems RingId{ get; set; }
-       public DefItems BottomId{ get;set;}
-       public WeaponItems Weapon{ get; set; }
-       public DefItems DefenceWeapon{ get;set;}
+       public DefItems ?HelmetId { get; set; }
+       public DefItems ?BodyArmorId { get; set; }
+       public DefItems ?GlovesId{ get; set; }
+       public DefItems ?RingId{ get; set; }
+       public DefItems ?BottomId{ get;set;}
+       public WeaponItems ?Weapon{ get; set; }
+       public DefItems ?DefenceWeapon{ get;set;}
        public Sets(DefItems helmetId, DefItems bodyArmorId, DefItems glovesId, DefItems ringId, DefItems bottomId, WeaponItems weapon, DefItems defenceWeapon)
        {
             HelmetId = helmetId;

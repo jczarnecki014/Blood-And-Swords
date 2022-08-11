@@ -4,16 +4,14 @@ Create database BasSql;
 --Creating tables
 create table Users
 (
-	UserId int,
-	UserName varchar(15),
-	UserPassword varchar(25),
-	UserEmail varchar(25),
-	ChampionName varchar(25),
+	UserId int IDENTITY(1,1),
+	UserName varchar(50),
+	UserPassword varchar(50),
+	UserEmail varchar(50),
+	ChampionName varchar(50),
 	ChampionMoney int,
 	ChampionLevel int,
-	ChampionAttributes int,
-	ChampionStats int,
-	ChampionSet int
+	AvatarId int,
 	primary key (UserId)
 );
 
@@ -23,7 +21,6 @@ create table Attributes
 	Health int,
 	Dexterity int,
 	Strength int,
-	Durability int,
 	Inteligence int
 	primary key (UserId)
 );
@@ -74,6 +71,43 @@ create table DefItemAbility
 	PRIMARY KEY (IdProtection)
 );
 
+create table WeaponItem
+(
+	ItemId int,
+	ItemName varchar(50),
+	ItemDescribe varchar(255),
+	ItemImgSrc varchar(50),
+	ItemDemageForce int,
+	ItemHealth int,
+	ItemDexterity int,
+	ItemStrength int,
+	ItemInteligence int,
+	ItemRequireLevel int,
+	PRIMARY KEY (ItemId)
+);
+
+Create table Avatars
+(
+	AvatarId int IDENTITY(1,1),
+	AvatarImgSrc varchar(100),
+	AvatarName varchar(80),
+	AvatarStory varchar(1000),
+	AvatarSkillOne int,
+	AvatarSkillTwo int,
+	AvatarSkillThree int,
+	Primary key (AvatarId)
+);
+
+Create table Skills
+(
+	SkillId int IDENTITY(1,1),
+	SkillName varchar(50),
+	SkillDescription varchar(1500),
+	SkillImgSrc varchar(50),
+	SkillForceCategory varchar(50),
+	SkillForce float
+);
+
 -- INSERTS--
 
 Insert into dbo.DefItemAbility VALUES 
@@ -91,6 +125,51 @@ Insert into dbo.DefItems VALUES
 (6,'Magic Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Magic_Armor.png', 800, 4200, 60, 30, 420),
 (7,'Strengthened Leather Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Strengthened_Leather_Armor.png', 300, 3200, 80,120,80),
 (8,'troll armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\troll_armor.png', 800, 4300,20,200,50);
+
+Insert into Avatars 
+Values 
+('\IMG\Avatars\Wizz1.png','Czarownica','Zmysłowa i kobieca - z pewnością zawróci w głowie niejednemu mężczyźnie, lecz strzeż się! Czarownica włada najpotężniejszymi, siejącymi zamęt i zniszczenie magicznymi zdolnościami i wykorzystuje do własnych celów potężne siły czarnej energii',1,2,3),
+('\IMG\Avatars\Guard1.png','Wyklęty Rycerz','Charakteryzują go szczególne zasady postępowania. Niekiedy bardzo honorowe, innym razem tak godne pożałowania, że został wygnany przez samego Władcę Ursbarduru. Przemierza Królestwa w poszukiwaniu szczęścia, bogactwa i wrażeń. Nie można mu także odmówić silnych morale, sprytu oraz umiejętności zastraszania i prowokowania. Wzór cnót.',4,5,6),
+('\IMG\Avatars\Scout1.png','Mówca','Niech Cię nie zwiedzie powierzchowność tego młodego Elfa, pomimo anemicznego wyglądu i skromnej postury jego najcięższym orężem jest umysł. Inteligencja i zdolności psychokinetyczne dają mu przewagę nad tęgimi osiłkami i zbyt pewnymi siebie arogantami, pękającymi jak krwawe bańki mydlane od jednego pstryknięcia palcem.
+Jedyne co może zakłócić jego moc to ... kobieta.',22,23,24),
+('\IMG\Avatars\Wizz2.png','Druid','Jest starcem od zawsze, odkąd tylko sięga pamięcią. Nie wiadomo jak trafił do Ursbardur, lecz wyplenił z Purpurowego Boru wszelkie plugastwa jakie zadomowiły się w nim po Świętej Nocy, więc osadnicy zostawili go w spokoju, czasami  tylko prosząc o wyleczenie konającej krowy lub pobłogosławienie plonów. Druid żyje w zgodzie z florą i fauną, kontroluje pogodę i pozwala dzięciołowi spać w swoim kapeluszu.',13,14,15),
+('\IMG\Avatars\guard2.png','Gladiator','Dobrze mu idzie nie tylko w walce, ale i sztuce aktorskiej. Chętnie włączy się do bójki, nie ważne po której stronie - wystarczy, że dobrze zapłacisz. Każda przelana krew wzmacnia go i popycha ku większemu okrucieństwu. Mógłbyś powiedzieć, że to bestia zamknięta w ciele człowieka. Nie mylisz się.',16,17,18),
+('\IMG\Avatars\scout2.png','Łowca','Tropienie śladów, łowiectwo, przetrwanie w dziczy, skradanie się. To tylko część umiejętności Łowcy, a przynajmniej te, o których może mówić. Kieruje nim własny kompas moralny przez co wysłano za nim wiele listów gończych. Jeśli jesteś kłusownikiem, zbirem lub śmiałkiem zapuszczajacym się w las po jego głowę pilnuj, żeby twoja pozostała na swoim miejscu.',25,26,27),
+('\IMG\Avatars\girl1.png','Szamanka','Jej ród miał chronić i leczyć śmiertelników, jednak po masakrze na jej rodzinie poprzysięgła ludziom zemstę. Włada tajemniczymi mocami i wchodzi w umysł wrogów szerząc strach i szaleństwo. Nie ma sobie równych w sztuce skradania się i kamuflażu, więc miej się na baczności.',7,8,9),
+('\IMG\Avatars\prince1.png','Paladyn','Święty wojownik broniący boskich praw i szlacheckich cnót. Dzięki boskiej opatrzności jako jedyny jest w stanie walczyć z niumarłymi Odważny, prawy i zaprawiony w boju zawsze stanie w obronie prawdy i sprawiedliwości przed niekończącymi się atakami zła. Poza tym nie odmówi uratowania pięknej niewiasty od czasu do czasu.',10,11,12),
+('\IMG\Avatars\dwarf1.png','Krasnolud','Rasa kolonistów rozsianych po całym świecie, świetnie wyszkolona do walki i pieszych wędrówek. Krasnoludy znane są ze swojego niewielkiego wzrostu, nieugiętego charakteru i dużej siły. Nie boją się żadnej pracy, ani wyzwania, poza dosięgnięciem do najwyższej półki.',19,20,21);
+
+
+
+Insert into Skills
+Values
+('Pochłaniacz', 'Mag pochłania czarną energię z duszy swojego przeciwnika i wykorzystuje ją do zwiększenia swojej magicznej siły','IMG\Skils\Pochlaniacz.png','Intelligence',1.3),
+('Tchnienie Śmierci', 'Mag łączy się z czarną energią pochłonioną z duszy swojego przeciwnika, tworząc potężną dawkę magicznej mocy. Następnie zwraca ją do swojego przeciwnika zadając ogromne obrażenia duszy przeciwnika.','IMG\Skils\Tchnienie_Smierci.png','Intelligence',1.6),
+('Płaszcz','Mag wykorzystuje wszystkie pokłady nagromadzonej czarnej energi pozyskanej z duszy swojego przeciwnika a następnie tworzy z niej magiczny płaszcz otulający jego ciało który chroni go przed atakami','IMG\Skils\Plaszcz.png','Health', 1.6),
+('Cięcie','Wyklęty rycerz wykonuje szybkie cięcia orężem powodując krwawienie swojego przeciwnika doprowadzjąc do jego szybkiej śmierci.','IMG\Skils\Ciecie.png','Strength', 1.4),
+('Stalowa siła','Wyklęty rycerz jest ponad przeciętnie odporny na ataki ze strony przeciwników. Zaprawienie w licznych bojach zahartowało jego ciało powodując, że stało się ono bardziej odporne na większość ataków','IMG\Skils\Stalowa_siła.png','Health', 2.0),
+('Wrzask','Wyklęty rycerz swym ostrym krzykiem ogłusza przeciwników przez co zyskuje czas na uniknięcie ataku przeciwnika','IMG\Skils\Wrzask.png','Dexterity', 1.3),
+('Truposze','Szamanka wskrzesza wszystkie pochowane ciała w okolicy i rozkazuje im atakować wskazanych przeciwników','IMG\Skils\truposze.png','Intelligence', 1.9),
+('Jad','Szamanka wymawia zaklęcia zamieniając swój oreż w zaklętego jadowitego węża, który znacząco zwiększa obrażenia zadawane od broni','IMG\Skils\jad.png','Intelligence', 1.5),
+('Noc Truposzy','Szamanka wpada w szał śpiewając piosenkę w tajemniczym języku. Piosenka przebudza poległych tego świata, którzy wynurzają się z ziemi atakując swoich przeciwników','IMG\Skils\noc_truposzy.png','Intelligence', 2.2),
+('Szarża','Paladyn rozpoczyna szarże przeciwników niosąc na ustach hymn swego królestwa. Przeciwnicy odczuwają przerażenie słysząc donośny tupot końskich kopyt','IMG\Skils\Szarża.png','Strength', 3),
+('Błogosławieństwo','Paladyni jako święci wojownicy zyskali błogosławieństwo boże, które towarzyszy im w bitwach. Dzięki bożej łasce paladyn jest najbardziej odpornym bohaterem na wszystkie ataki','IMG\Skils\Blogoslawienstwo.png','Health', 2.6),
+('Kometa','Paladyn w trudnych chwilach walki odmawia modlitwę prosząc swojego boga o wsparcie, modlitwy te zostają wysłuchane a z nieba spada potężna kometa śmiertelnie raniąca przeciwników','IMG\Skils\Kometa.png','Strength', 1.7),
+('Uderzenie','Druid ładuje swoją laskę siłami natury a następnie udeża nią w swych przeciwników zadając obrażenia magiczne.','IMG\Skils\Uderzenie.png','Intelligence', 1.3),
+('Pędziwiatr','Druid wykorzysuje siły natury (powietrze) aby rozpętać minitornado pod swoimi nogami. Czyni to go niebywale zwinnym i szybkim co pozwala uniknąc ataków ze strony przeciwników ','IMG\Skils\Pedziwiatr.png','Dexterity', 1.6),
+('Żywa aura','Druid wykorzysuje wszystkie siły natury (ogień,wode,powietrze) łączy je i buduje z nich magiczną tarczę otaczającą jego ciało. Tak przygotowana osłona pozwala mu zablokować dużą część ataków przeciwnika  ','IMG\Skils\zywa_aura.png','Health', 1.8),
+('Triumf','Gladiator ocieka dumą po serii ostatnich zwycięstw. Duma ta dodaje mu otuchy i pewności siebie przez co staje się mniej wrażliwy na ból','IMG\Skils\Triumf.png','Health', 1.4),
+('Natarcie','Gladiator pewnie rozpoczyna natarcie gdy tylko usłyszy gong rozpoczynający walkę, z szaleństwem rzuca się na przeciwnika powodując u niego konsternacje oraz przytłoczenie . Ale czy czasem taka pewność siebie nie przyniesie mu zguby ? ','IMG\Skils\Natarcie.png','Strength', 1.7),
+('Ferwor','Gladiator świetnie czuje się w ferworze walki, adrenalina i zajadłość jaka towarzyszy mu na arenie powoduje, że traci on jakiekolwiek poczucie świadomości, bólu nie mówiąc już o strachu...','IMG\Skils\Ferwor.png','Health', 1.9),
+('Bój','Krasnoludy to rasa, której głównym celem w rzyciu jest toczenie bojów... Z tą cecha rodzi się każdy młody krasnolud. Napewno nie będzie to łatwy przeciwnik...','IMG\Skils\Boj.png','Strength', 1.6),
+('Łamacz','Krasnoludy mocnym uderzeniem bronią przełamuje obronę przeciwnika, ogłuszając go na sekundę. Tworzy sobię tym sposobem idealną sytuację aby zadać cios krytyczny','IMG\Skils\Lamacz.png','Strength', 1.9),
+('Orzeł','Krasnoludy od setek lat uważają, że najwspanialszym zwierzęciem są orły. Stały się one ich najwierniejszymi kompanami w walce i w życiu. Orły rzucają się na przeciwnika krasnoluda pozwalając krasnoludą uniknąć ciosów przeciwnika.','IMG\Skils\Orzel.png','Dexterity', 1.2);
+('Kopniak','Mówca "sprzedaje" kopa swojemu przeciwnikowi zadając mu obrażenia fizyczne','IMG\Skils\Kopniak.png','Strength', 1.1),
+('Rycie gara','Mówca zaczyna pierdzielić takie głupoty, że doprowadza do potężnego bólu głowy wszystkich przeciwników znajdujących się w okolicy -||-"Ludzie woleli złożyć broń niż słuchać tego pitolenia"','IMG\Skils\Rycie_gara.png','Strength', 1.3);
+('Akcja ewakuacja','Jedyną odpornoscią na umiejętności mówcy jest... GŁUCHOTA. Niesty zdażają się głusi jak pień przeciwnicy na, których jedyną bronią jest ciężki oręż, którego najpewniej mówca nie uniesie. W takiej sytuacji nie pozostaje nic innego niż "Pakować walize" ','IMG\Skils\akcja_ewakuacja.png','Dexterity', 3),
+('Strzała','Największy atutem łucznika jest zasięg, łucznik może zadawać śmiertelne obrażenia celą oddalonym o kilaset metrów dalej.','IMG\Skils\Strzala.png','Dexterity', 1.9),
+('Związane nogi','Łucznicy słyną z świetnego sprytu i zręczności. Są zwinni i niezauważeni. Mimo, że walczą z dystansu potrafią podejść naprawdę blisko swojego przeciwnika aby wyrządzić mu psikusa. Łucznik zakrada się do przeciwnika i w ułamku sekundy związuje mu buty tworząc pajęczynę z jego sznurówek','IMG\Skils\Zwiazane_nogi.png','Dexterity', 2.1),
+('Wszyscy razem','Łucznicy kryją się wszędzie nawet nie wiesz jak wielu może ich być w twojej okolicy. Łucznik głośnym krzykiem wzywa swoich przyjacieli i wszscy razem jednym tępem zasypują przeciwników gradem strzał','IMG\Skils\Wszyscy_razem.png','Dexterity', 1.8);
 
 
 --Creating procedures 

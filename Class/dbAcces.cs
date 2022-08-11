@@ -85,5 +85,62 @@ using System.Data.SqlClient;
                 return userSet.CreateStableSet();
             }
         }
+
+        public bool CheckUserExist(string name)
+        {
+            using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
+            {
+               bool userExist = connection.ExecuteScalar<bool>($"select count(UserEmail) from Users where UserEmail='{name}' OR UserName = '{name}'");
+               return userExist;
+            }
+        }
+        public void InsertNewUser(User user,string password)
+        {
+            using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
+            {
+               connection.Execute($"Insert into dbo.Users Values ('{user.UserName}','{password}','{user.UserEmail}','{user.ChampionName}'," +
+               $"{user.ChampionMoney},{user.ChampionLevel},{user.Avatar.AvatarId})"); //add new user to table
+
+               int UserId = (connection.QuerySingle<int>($"select UserId from Users where UserName = '{user.UserName}'"));
+
+               connection.Execute($"Insert into dbo.Attributes Values ({UserId},{user.ChampionAttributes.Health},{user.ChampionAttributes.Dexterity}," +
+               $"{user.ChampionAttributes.Strength}, {user.ChampionAttributes.Inteligence})");//add attributes record
+
+               connection.Execute($"Insert into dbo.Stats Values ({UserId} , {user.ChampionStats.Wins} , {user.ChampionStats.Lose} , {user.ChampionStats.Fights})"); // add stats record
+
+               connection.Execute($"Insert into dbo.Sets(UserId) Values ({UserId})"); // add Sets record
+            }
+        }
+        public List<Avatar> GetAvatars()
+        {
+            using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
+            {
+               List<Avatar>avatars = new List<Avatar>();
+               List<VolatileAvatar> volatileAvatars = connection.Query<VolatileAvatar>("Select * From dbo.Avatars").ToList();
+               foreach(VolatileAvatar avatar in volatileAvatars)
+               {
+                   avatars.Add(avatar.GetStableAvatar());
+               }
+               return avatars;
+            }
+        }
+
+        public Avatar GetAvatar(int avatarId)
+        {
+            using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
+            {
+               MessageBox.Show(avatarId.ToString());
+               VolatileAvatar volatileAvatars = connection.QuerySingle<VolatileAvatar>($"Select * From dbo.Avatars WHERE AvatarId = {avatarId}");
+               return volatileAvatars.GetStableAvatar();
+            }
+        }
+        public Skill GetAvatarSkill(int SkillId)
+        {
+             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
+             {
+               Skill avatarSkill = connection.QuerySingle<Skill>($"Select * From dbo.Skills Where SkillId = {SkillId}");
+               return avatarSkill;
+             }  
+        }
     }
 

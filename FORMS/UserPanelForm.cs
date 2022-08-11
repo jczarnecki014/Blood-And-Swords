@@ -18,7 +18,6 @@ namespace Blood_and_Swords.FORMS
             InitializeComponent();
             ArrmorPictureBoxHoverEfect();
             this.user = user;
-            this.BodyArmorImg.Image = Image.FromFile(@"..\..\..\" + user.ChampionSet.BodyArmorId.ItemImgSrc);
         }
         private void ArrmorPictureBoxHoverEfect()
         {

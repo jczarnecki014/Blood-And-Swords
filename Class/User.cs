@@ -1,7 +1,7 @@
 ﻿
     public class User
     {
-        public int UserId{ get; set; }
+        public int UserId { get; set; }
         public string UserName{ get; set; }
         public string UserEmail { get;set;}
         public string ChampionName { get; set; }
@@ -10,9 +10,9 @@
         public Attributes ChampionAttributes{get;set;} 
         public Stats ChampionStats { get; set; } // tu ma być klasa stats
         public Sets ChampionSet { get; set;} // tu ma być klasa sets
-        public User(int userId, string userName, string userEmail, string championName, int championMoney, int championLevel, Attributes championAttributes, Stats championStats, Sets championSet)
+        public Avatar Avatar { get; set; }
+        public User(string userName, string userEmail, string championName, int championMoney, int championLevel, Attributes championAttributes, Stats championStats, Sets championSet, Avatar avatar)
         {
-            UserId = userId;
             UserName = userName;
             UserEmail = userEmail;
             ChampionName = championName;
@@ -21,6 +21,7 @@
             ChampionAttributes = championAttributes;
             ChampionStats = championStats;
             ChampionSet = championSet;
+            Avatar = avatar;
         }
         public User()
         {
@@ -30,18 +31,16 @@
     
     class VolatileUser:User
     {
-        public int ChampionAttributes{ get;set;}
-        public int ChampionStats { get; set; }
-        public int ChampionSet { get; set; }
+        public int AvatarId { get;set;}
         public User CreateStableUser()
         {     
            dbAcces newSql = new dbAcces();
-           Attributes champAttributes = newSql.GetUserAttributes(this.ChampionAttributes);
-           Stats champStats = newSql.GetUserStats(this.ChampionStats);
-           Sets ChampionSet = newSql.GetUserSets(this.ChampionSet);
+           Attributes champAttributes = newSql.GetUserAttributes(this.UserId);
+           Stats champStats = newSql.GetUserStats(this.UserId);
+           Sets ChampionSet = newSql.GetUserSets(this.UserId);
+           Avatar StableAvatar =newSql.GetAvatar(AvatarId);
 
            User StableUser = new User(
-                this.UserId,
                 this.UserName,
                 this.UserEmail,
                 this.ChampionName,
@@ -49,7 +48,8 @@
                 this.ChampionLevel,
                 champAttributes,
                 champStats,
-                ChampionSet
+                ChampionSet,
+                StableAvatar
            );
            return StableUser;
         }

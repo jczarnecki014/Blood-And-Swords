@@ -32,32 +32,27 @@
             this.RegisterPanel = new System.Windows.Forms.Panel();
             this.CreateAccountButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ConfirmedPasswordTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UserEmailTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.AvatarFacePictureBox = new System.Windows.Forms.PictureBox();
+            this.AvatarStoryTextBox = new System.Windows.Forms.TextBox();
+            this.ChampionKindgdomTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ChampNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.AppExitBtn = new System.Windows.Forms.Button();
             this.ReturnBtn = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.RegisterPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarFacePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // RegisterPanel
@@ -66,9 +61,9 @@
             this.RegisterPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.RegisterPanel.Controls.Add(this.CreateAccountButton);
             this.RegisterPanel.Controls.Add(this.label5);
-            this.RegisterPanel.Controls.Add(this.textBox2);
+            this.RegisterPanel.Controls.Add(this.ConfirmedPasswordTextBox);
             this.RegisterPanel.Controls.Add(this.label4);
-            this.RegisterPanel.Controls.Add(this.textBox1);
+            this.RegisterPanel.Controls.Add(this.UserEmailTextBox);
             this.RegisterPanel.Controls.Add(this.label3);
             this.RegisterPanel.Controls.Add(this.PasswordTextBox);
             this.RegisterPanel.Controls.Add(this.label2);
@@ -90,6 +85,7 @@
             this.CreateAccountButton.TabIndex = 22;
             this.CreateAccountButton.Text = "Create Account";
             this.CreateAccountButton.UseVisualStyleBackColor = false;
+            this.CreateAccountButton.Click += new System.EventHandler(this.CreateAccountButton_Click);
             // 
             // label5
             // 
@@ -102,18 +98,18 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "Confirm Password";
             // 
-            // textBox2
+            // ConfirmedPasswordTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox2.Location = new System.Drawing.Point(75, 237);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 31);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.ConfirmedPasswordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.ConfirmedPasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ConfirmedPasswordTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ConfirmedPasswordTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.ConfirmedPasswordTextBox.Location = new System.Drawing.Point(75, 237);
+            this.ConfirmedPasswordTextBox.Name = "ConfirmedPasswordTextBox";
+            this.ConfirmedPasswordTextBox.Size = new System.Drawing.Size(249, 31);
+            this.ConfirmedPasswordTextBox.TabIndex = 20;
+            this.ConfirmedPasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ConfirmedPasswordTextBox.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -126,18 +122,17 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Email";
             // 
-            // textBox1
+            // UserEmailTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Location = new System.Drawing.Point(75, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 31);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.UserEmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.UserEmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserEmailTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserEmailTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.UserEmailTextBox.Location = new System.Drawing.Point(75, 107);
+            this.UserEmailTextBox.Name = "UserEmailTextBox";
+            this.UserEmailTextBox.Size = new System.Drawing.Size(249, 31);
+            this.UserEmailTextBox.TabIndex = 18;
+            this.UserEmailTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -190,12 +185,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(40)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.AvatarFacePictureBox);
+            this.panel1.Controls.Add(this.AvatarStoryTextBox);
+            this.panel1.Controls.Add(this.ChampionKindgdomTextBox);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.ChampNameTextBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -204,17 +197,42 @@
             this.panel1.Size = new System.Drawing.Size(438, 332);
             this.panel1.TabIndex = 2;
             // 
-            // textBox3
+            // AvatarFacePictureBox
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox3.Location = new System.Drawing.Point(17, 271);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(249, 31);
-            this.textBox3.TabIndex = 18;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AvatarFacePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AvatarFacePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("AvatarFacePictureBox.Image")));
+            this.AvatarFacePictureBox.Location = new System.Drawing.Point(45, 43);
+            this.AvatarFacePictureBox.Name = "AvatarFacePictureBox";
+            this.AvatarFacePictureBox.Size = new System.Drawing.Size(110, 110);
+            this.AvatarFacePictureBox.TabIndex = 21;
+            this.AvatarFacePictureBox.TabStop = false;
+            this.AvatarFacePictureBox.Click += new System.EventHandler(this.AvatarFace_Click);
+            // 
+            // AvatarStoryTextBox
+            // 
+            this.AvatarStoryTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(40)))));
+            this.AvatarStoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AvatarStoryTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarStoryTextBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.AvatarStoryTextBox.Location = new System.Drawing.Point(184, 42);
+            this.AvatarStoryTextBox.Multiline = true;
+            this.AvatarStoryTextBox.Name = "AvatarStoryTextBox";
+            this.AvatarStoryTextBox.ReadOnly = true;
+            this.AvatarStoryTextBox.Size = new System.Drawing.Size(230, 111);
+            this.AvatarStoryTextBox.TabIndex = 20;
+            this.AvatarStoryTextBox.Text = "Please select champion";
+            // 
+            // ChampionKindgdomTextBox
+            // 
+            this.ChampionKindgdomTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.ChampionKindgdomTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ChampionKindgdomTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChampionKindgdomTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.ChampionKindgdomTextBox.Location = new System.Drawing.Point(17, 271);
+            this.ChampionKindgdomTextBox.Name = "ChampionKindgdomTextBox";
+            this.ChampionKindgdomTextBox.Size = new System.Drawing.Size(407, 31);
+            this.ChampionKindgdomTextBox.TabIndex = 18;
+            this.ChampionKindgdomTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -227,14 +245,6 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Champion Kingdom Name";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // ChampNameTextBox
             // 
             this.ChampNameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
@@ -243,7 +253,7 @@
             this.ChampNameTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.ChampNameTextBox.Location = new System.Drawing.Point(17, 206);
             this.ChampNameTextBox.Name = "ChampNameTextBox";
-            this.ChampNameTextBox.Size = new System.Drawing.Size(249, 31);
+            this.ChampNameTextBox.Size = new System.Drawing.Size(407, 31);
             this.ChampNameTextBox.TabIndex = 12;
             this.ChampNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -296,30 +306,6 @@
             this.ReturnBtn.UseVisualStyleBackColor = false;
             this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(117, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(217, 10);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(317, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(94, 94);
-            this.pictureBox4.TabIndex = 22;
-            this.pictureBox4.TabStop = false;
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -340,11 +326,8 @@
             this.RegisterPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarFacePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,7 +340,7 @@
         private Button AppExitBtn;
         private Button ReturnBtn;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox UserEmailTextBox;
         private Label label3;
         private TextBox PasswordTextBox;
         private Label label2;
@@ -365,13 +348,11 @@
         private TextBox ChampNameTextBox;
         private Label label1;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox ConfirmedPasswordTextBox;
         private Button CreateAccountButton;
-        private TextBox textBox3;
+        private TextBox ChampionKindgdomTextBox;
         private Label label6;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
+        private TextBox AvatarStoryTextBox;
+        private PictureBox AvatarFacePictureBox;
     }
 }
