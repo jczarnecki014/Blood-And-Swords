@@ -42,8 +42,8 @@
             this.BottomImg = new System.Windows.Forms.PictureBox();
             this.BodyArmorImg = new System.Windows.Forms.PictureBox();
             this.HeadImg = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.ChampionInfoPanel = new System.Windows.Forms.Panel();
+            this.ChampionNameLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -58,24 +58,24 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.AvatarSkillThreeForceDesciption = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.AvatarSkillThreeNameLabel = new System.Windows.Forms.Label();
+            this.AvatarSkillThreePictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.AvatarSkillTwoForceDesciption = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.AvatarSkillTwoNameLabel = new System.Windows.Forms.Label();
+            this.AvatarSkillTwoPictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.AvatarSkillOneForceDesciption = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.AvatarSkillOneNameLabel = new System.Windows.Forms.Label();
+            this.AvatarSkillOnePictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.AvatarSkillThreePictureBoxOne = new System.Windows.Forms.PictureBox();
+            this.AvatarSkillTwoPictureBoxOne = new System.Windows.Forms.PictureBox();
+            this.AvatarSkillOnePictureBoxOne = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AvatarpictureBox = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -99,36 +99,72 @@
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.UserStatsPanel = new System.Windows.Forms.Panel();
+            this.AvatarLoseNumberLabel = new System.Windows.Forms.Label();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.AvatarWinsNumberLabel = new System.Windows.Forms.Label();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.AvatarFightsNumberLabel = new System.Windows.Forms.Label();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.AvatarLvLabel = new System.Windows.Forms.Label();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.UserNameLabel = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.UserAttributesPanel = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.AvatarDexterityForceLabel = new System.Windows.Forms.Label();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.AvatarIntelligenceForceLabel = new System.Windows.Forms.Label();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.AvatarHealthForceLabel = new System.Windows.Forms.Label();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.AvatarStrengthForceLabel = new System.Windows.Forms.Label();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.LoadingPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.MenuPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.UserSetPanel.SuspendLayout();
@@ -139,7 +175,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BottomImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BodyArmorImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeadImg)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.ChampionInfoPanel.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel12.SuspendLayout();
@@ -150,17 +186,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillThreePictureBoxTwo)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillTwoPictureBoxTwo)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillOnePictureBoxTwo)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillThreePictureBoxOne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillTwoPictureBoxOne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillOnePictureBoxOne)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarpictureBox)).BeginInit();
             this.panel13.SuspendLayout();
@@ -184,15 +220,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel14.SuspendLayout();
+            this.UserStatsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             this.panel15.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.UserAttributesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            this.LoadingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuPanel
@@ -338,33 +388,33 @@
             this.HeadImg.TabIndex = 5;
             this.HeadImg.TabStop = false;
             // 
-            // panel1
+            // ChampionInfoPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(76)))), ((int)(((byte)(42)))), ((int)(((byte)(16)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 976);
-            this.panel1.TabIndex = 3;
+            this.ChampionInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(76)))), ((int)(((byte)(42)))), ((int)(((byte)(16)))));
+            this.ChampionInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ChampionInfoPanel.Controls.Add(this.ChampionNameLabel);
+            this.ChampionInfoPanel.Controls.Add(this.panel11);
+            this.ChampionInfoPanel.Controls.Add(this.panel9);
+            this.ChampionInfoPanel.Controls.Add(this.panel8);
+            this.ChampionInfoPanel.Controls.Add(this.panel5);
+            this.ChampionInfoPanel.Controls.Add(this.panel3);
+            this.ChampionInfoPanel.Controls.Add(this.panel2);
+            this.ChampionInfoPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ChampionInfoPanel.Location = new System.Drawing.Point(0, 65);
+            this.ChampionInfoPanel.Name = "ChampionInfoPanel";
+            this.ChampionInfoPanel.Size = new System.Drawing.Size(400, 976);
+            this.ChampionInfoPanel.TabIndex = 3;
             // 
-            // label7
+            // ChampionNameLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(122, 312);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 27);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "ChampionName";
+            this.ChampionNameLabel.AutoSize = true;
+            this.ChampionNameLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChampionNameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.ChampionNameLabel.Location = new System.Drawing.Point(122, 312);
+            this.ChampionNameLabel.Name = "ChampionNameLabel";
+            this.ChampionNameLabel.Size = new System.Drawing.Size(168, 27);
+            this.ChampionNameLabel.TabIndex = 6;
+            this.ChampionNameLabel.Text = "ChampionName";
             // 
             // panel11
             // 
@@ -383,6 +433,7 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Gray;
             this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox13.Enabled = false;
             this.pictureBox13.Location = new System.Drawing.Point(280, 103);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(70, 70);
@@ -400,6 +451,7 @@
             this.panel12.Controls.Add(this.label8);
             this.panel12.Controls.Add(this.pictureBox10);
             this.panel12.Controls.Add(this.pictureBox9);
+            this.panel12.Enabled = false;
             this.panel12.Location = new System.Drawing.Point(30, 100);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 76);
@@ -489,6 +541,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(130, 25);
@@ -503,6 +556,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Gray;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Enabled = false;
             this.pictureBox8.Location = new System.Drawing.Point(30, 10);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(70, 70);
@@ -511,195 +565,195 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.label5);
+            this.panel9.Controls.Add(this.AvatarSkillThreeForceDesciption);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.pictureBox7);
+            this.panel9.Controls.Add(this.AvatarSkillThreePictureBoxTwo);
             this.panel9.Location = new System.Drawing.Point(52, 660);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(300, 70);
             this.panel9.TabIndex = 4;
             // 
-            // label5
+            // AvatarSkillThreeForceDesciption
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(80, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 15);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "label5";
+            this.AvatarSkillThreeForceDesciption.AutoSize = true;
+            this.AvatarSkillThreeForceDesciption.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarSkillThreeForceDesciption.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AvatarSkillThreeForceDesciption.Location = new System.Drawing.Point(80, 40);
+            this.AvatarSkillThreeForceDesciption.Name = "AvatarSkillThreeForceDesciption";
+            this.AvatarSkillThreeForceDesciption.Size = new System.Drawing.Size(29, 12);
+            this.AvatarSkillThreeForceDesciption.TabIndex = 1;
+            this.AvatarSkillThreeForceDesciption.Text = "label5";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(46)))), ((int)(((byte)(22)))), ((int)(((byte)(4)))));
-            this.panel10.Controls.Add(this.label6);
+            this.panel10.Controls.Add(this.AvatarSkillThreeNameLabel);
             this.panel10.Location = new System.Drawing.Point(70, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(230, 35);
             this.panel10.TabIndex = 1;
             // 
-            // label6
+            // AvatarSkillThreeNameLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(10, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 15);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "label6";
+            this.AvatarSkillThreeNameLabel.AutoSize = true;
+            this.AvatarSkillThreeNameLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarSkillThreeNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AvatarSkillThreeNameLabel.Location = new System.Drawing.Point(10, 10);
+            this.AvatarSkillThreeNameLabel.Name = "AvatarSkillThreeNameLabel";
+            this.AvatarSkillThreeNameLabel.Size = new System.Drawing.Size(35, 15);
+            this.AvatarSkillThreeNameLabel.TabIndex = 0;
+            this.AvatarSkillThreeNameLabel.Text = "label6";
             // 
-            // pictureBox7
+            // AvatarSkillThreePictureBoxTwo
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.AvatarSkillThreePictureBoxTwo.BackColor = System.Drawing.Color.Gray;
+            this.AvatarSkillThreePictureBoxTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AvatarSkillThreePictureBoxTwo.Location = new System.Drawing.Point(0, 0);
+            this.AvatarSkillThreePictureBoxTwo.Name = "AvatarSkillThreePictureBoxTwo";
+            this.AvatarSkillThreePictureBoxTwo.Size = new System.Drawing.Size(70, 70);
+            this.AvatarSkillThreePictureBoxTwo.TabIndex = 0;
+            this.AvatarSkillThreePictureBoxTwo.TabStop = false;
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label4);
+            this.panel8.Controls.Add(this.AvatarSkillTwoForceDesciption);
             this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.AvatarSkillTwoPictureBoxTwo);
             this.panel8.Location = new System.Drawing.Point(52, 570);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(300, 70);
             this.panel8.TabIndex = 3;
             // 
-            // label4
+            // AvatarSkillTwoForceDesciption
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(80, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "label4";
+            this.AvatarSkillTwoForceDesciption.AutoSize = true;
+            this.AvatarSkillTwoForceDesciption.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarSkillTwoForceDesciption.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AvatarSkillTwoForceDesciption.Location = new System.Drawing.Point(80, 40);
+            this.AvatarSkillTwoForceDesciption.Name = "AvatarSkillTwoForceDesciption";
+            this.AvatarSkillTwoForceDesciption.Size = new System.Drawing.Size(29, 12);
+            this.AvatarSkillTwoForceDesciption.TabIndex = 1;
+            this.AvatarSkillTwoForceDesciption.Text = "label4";
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(46)))), ((int)(((byte)(22)))), ((int)(((byte)(4)))));
-            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.AvatarSkillTwoNameLabel);
             this.panel7.Location = new System.Drawing.Point(70, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(230, 35);
             this.panel7.TabIndex = 1;
             // 
-            // label3
+            // AvatarSkillTwoNameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(10, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "label3";
+            this.AvatarSkillTwoNameLabel.AutoSize = true;
+            this.AvatarSkillTwoNameLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarSkillTwoNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AvatarSkillTwoNameLabel.Location = new System.Drawing.Point(10, 10);
+            this.AvatarSkillTwoNameLabel.Name = "AvatarSkillTwoNameLabel";
+            this.AvatarSkillTwoNameLabel.Size = new System.Drawing.Size(35, 15);
+            this.AvatarSkillTwoNameLabel.TabIndex = 0;
+            this.AvatarSkillTwoNameLabel.Text = "label3";
             // 
-            // pictureBox6
+            // AvatarSkillTwoPictureBoxTwo
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.AvatarSkillTwoPictureBoxTwo.BackColor = System.Drawing.Color.Gray;
+            this.AvatarSkillTwoPictureBoxTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AvatarSkillTwoPictureBoxTwo.Location = new System.Drawing.Point(0, 0);
+            this.AvatarSkillTwoPictureBoxTwo.Name = "AvatarSkillTwoPictureBoxTwo";
+            this.AvatarSkillTwoPictureBoxTwo.Size = new System.Drawing.Size(70, 70);
+            this.AvatarSkillTwoPictureBoxTwo.TabIndex = 0;
+            this.AvatarSkillTwoPictureBoxTwo.TabStop = false;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.AvatarSkillOneForceDesciption);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.AvatarSkillOnePictureBoxTwo);
             this.panel5.Location = new System.Drawing.Point(52, 480);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(300, 70);
             this.panel5.TabIndex = 2;
             // 
-            // label2
+            // AvatarSkillOneForceDesciption
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(80, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.AvatarSkillOneForceDesciption.AutoSize = true;
+            this.AvatarSkillOneForceDesciption.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarSkillOneForceDesciption.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AvatarSkillOneForceDesciption.Location = new System.Drawing.Point(80, 40);
+            this.AvatarSkillOneForceDesciption.Name = "AvatarSkillOneForceDesciption";
+            this.AvatarSkillOneForceDesciption.Size = new System.Drawing.Size(29, 12);
+            this.AvatarSkillOneForceDesciption.TabIndex = 1;
+            this.AvatarSkillOneForceDesciption.Text = "label2";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(46)))), ((int)(((byte)(22)))), ((int)(((byte)(4)))));
-            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.AvatarSkillOneNameLabel);
             this.panel6.Location = new System.Drawing.Point(70, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(230, 35);
             this.panel6.TabIndex = 1;
             // 
-            // label1
+            // AvatarSkillOneNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.AvatarSkillOneNameLabel.AutoSize = true;
+            this.AvatarSkillOneNameLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarSkillOneNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AvatarSkillOneNameLabel.Location = new System.Drawing.Point(10, 10);
+            this.AvatarSkillOneNameLabel.Name = "AvatarSkillOneNameLabel";
+            this.AvatarSkillOneNameLabel.Size = new System.Drawing.Size(35, 15);
+            this.AvatarSkillOneNameLabel.TabIndex = 0;
+            this.AvatarSkillOneNameLabel.Text = "label1";
             // 
-            // pictureBox5
+            // AvatarSkillOnePictureBoxTwo
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.AvatarSkillOnePictureBoxTwo.BackColor = System.Drawing.Color.Gray;
+            this.AvatarSkillOnePictureBoxTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AvatarSkillOnePictureBoxTwo.Location = new System.Drawing.Point(0, 0);
+            this.AvatarSkillOnePictureBoxTwo.Name = "AvatarSkillOnePictureBoxTwo";
+            this.AvatarSkillOnePictureBoxTwo.Size = new System.Drawing.Size(70, 70);
+            this.AvatarSkillOnePictureBoxTwo.TabIndex = 0;
+            this.AvatarSkillOnePictureBoxTwo.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(76)))), ((int)(((byte)(42)))), ((int)(((byte)(16)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.AvatarSkillThreePictureBoxOne);
+            this.panel3.Controls.Add(this.AvatarSkillTwoPictureBoxOne);
+            this.panel3.Controls.Add(this.AvatarSkillOnePictureBoxOne);
             this.panel3.Location = new System.Drawing.Point(50, 350);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(300, 100);
             this.panel3.TabIndex = 1;
             // 
-            // pictureBox4
+            // AvatarSkillThreePictureBoxOne
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox4.Location = new System.Drawing.Point(215, 15);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
+            this.AvatarSkillThreePictureBoxOne.BackColor = System.Drawing.Color.DimGray;
+            this.AvatarSkillThreePictureBoxOne.Location = new System.Drawing.Point(215, 15);
+            this.AvatarSkillThreePictureBoxOne.Name = "AvatarSkillThreePictureBoxOne";
+            this.AvatarSkillThreePictureBoxOne.Size = new System.Drawing.Size(70, 70);
+            this.AvatarSkillThreePictureBoxOne.TabIndex = 2;
+            this.AvatarSkillThreePictureBoxOne.TabStop = false;
             // 
-            // pictureBox3
+            // AvatarSkillTwoPictureBoxOne
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox3.Location = new System.Drawing.Point(115, 15);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.AvatarSkillTwoPictureBoxOne.BackColor = System.Drawing.Color.DimGray;
+            this.AvatarSkillTwoPictureBoxOne.Location = new System.Drawing.Point(115, 15);
+            this.AvatarSkillTwoPictureBoxOne.Name = "AvatarSkillTwoPictureBoxOne";
+            this.AvatarSkillTwoPictureBoxOne.Size = new System.Drawing.Size(70, 70);
+            this.AvatarSkillTwoPictureBoxOne.TabIndex = 1;
+            this.AvatarSkillTwoPictureBoxOne.TabStop = false;
             // 
-            // pictureBox2
+            // AvatarSkillOnePictureBoxOne
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.AvatarSkillOnePictureBoxOne.BackColor = System.Drawing.Color.DimGray;
+            this.AvatarSkillOnePictureBoxOne.Location = new System.Drawing.Point(15, 15);
+            this.AvatarSkillOnePictureBoxOne.Name = "AvatarSkillOnePictureBoxOne";
+            this.AvatarSkillOnePictureBoxOne.Size = new System.Drawing.Size(70, 70);
+            this.AvatarSkillOnePictureBoxOne.TabIndex = 0;
+            this.AvatarSkillOnePictureBoxOne.TabStop = false;
             // 
             // panel2
             // 
@@ -931,34 +985,34 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel14
+            // UserStatsPanel
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.label16);
-            this.panel14.Controls.Add(this.pictureBox36);
-            this.panel14.Controls.Add(this.label15);
-            this.panel14.Controls.Add(this.pictureBox35);
-            this.panel14.Controls.Add(this.label14);
-            this.panel14.Controls.Add(this.pictureBox34);
-            this.panel14.Controls.Add(this.label13);
-            this.panel14.Controls.Add(this.pictureBox33);
-            this.panel14.Controls.Add(this.label12);
-            this.panel14.Location = new System.Drawing.Point(430, 95);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(300, 160);
-            this.panel14.TabIndex = 5;
+            this.UserStatsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.UserStatsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserStatsPanel.Controls.Add(this.AvatarLoseNumberLabel);
+            this.UserStatsPanel.Controls.Add(this.pictureBox36);
+            this.UserStatsPanel.Controls.Add(this.AvatarWinsNumberLabel);
+            this.UserStatsPanel.Controls.Add(this.pictureBox35);
+            this.UserStatsPanel.Controls.Add(this.AvatarFightsNumberLabel);
+            this.UserStatsPanel.Controls.Add(this.pictureBox34);
+            this.UserStatsPanel.Controls.Add(this.AvatarLvLabel);
+            this.UserStatsPanel.Controls.Add(this.pictureBox33);
+            this.UserStatsPanel.Controls.Add(this.UserNameLabel);
+            this.UserStatsPanel.Location = new System.Drawing.Point(430, 95);
+            this.UserStatsPanel.Name = "UserStatsPanel";
+            this.UserStatsPanel.Size = new System.Drawing.Size(300, 160);
+            this.UserStatsPanel.TabIndex = 5;
             // 
-            // label16
+            // AvatarLoseNumberLabel
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(232, 110);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 27);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "999";
+            this.AvatarLoseNumberLabel.AutoSize = true;
+            this.AvatarLoseNumberLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarLoseNumberLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarLoseNumberLabel.Location = new System.Drawing.Point(232, 110);
+            this.AvatarLoseNumberLabel.Name = "AvatarLoseNumberLabel";
+            this.AvatarLoseNumberLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarLoseNumberLabel.TabIndex = 15;
+            this.AvatarLoseNumberLabel.Text = "999";
             // 
             // pictureBox36
             // 
@@ -969,16 +1023,16 @@
             this.pictureBox36.TabIndex = 14;
             this.pictureBox36.TabStop = false;
             // 
-            // label15
+            // AvatarWinsNumberLabel
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(232, 70);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(48, 27);
-            this.label15.TabIndex = 13;
-            this.label15.Text = "999";
+            this.AvatarWinsNumberLabel.AutoSize = true;
+            this.AvatarWinsNumberLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarWinsNumberLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarWinsNumberLabel.Location = new System.Drawing.Point(232, 70);
+            this.AvatarWinsNumberLabel.Name = "AvatarWinsNumberLabel";
+            this.AvatarWinsNumberLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarWinsNumberLabel.TabIndex = 13;
+            this.AvatarWinsNumberLabel.Text = "999";
             // 
             // pictureBox35
             // 
@@ -989,16 +1043,16 @@
             this.pictureBox35.TabIndex = 12;
             this.pictureBox35.TabStop = false;
             // 
-            // label14
+            // AvatarFightsNumberLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.SystemColors.Control;
-            this.label14.Location = new System.Drawing.Point(70, 110);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 27);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "999";
+            this.AvatarFightsNumberLabel.AutoSize = true;
+            this.AvatarFightsNumberLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarFightsNumberLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarFightsNumberLabel.Location = new System.Drawing.Point(70, 110);
+            this.AvatarFightsNumberLabel.Name = "AvatarFightsNumberLabel";
+            this.AvatarFightsNumberLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarFightsNumberLabel.TabIndex = 11;
+            this.AvatarFightsNumberLabel.Text = "999";
             // 
             // pictureBox34
             // 
@@ -1009,16 +1063,16 @@
             this.pictureBox34.TabIndex = 10;
             this.pictureBox34.TabStop = false;
             // 
-            // label13
+            // AvatarLvLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(70, 70);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 27);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "999";
+            this.AvatarLvLabel.AutoSize = true;
+            this.AvatarLvLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarLvLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarLvLabel.Location = new System.Drawing.Point(70, 70);
+            this.AvatarLvLabel.Name = "AvatarLvLabel";
+            this.AvatarLvLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarLvLabel.TabIndex = 9;
+            this.AvatarLvLabel.Text = "999";
             // 
             // pictureBox33
             // 
@@ -1029,16 +1083,16 @@
             this.pictureBox33.TabIndex = 8;
             this.pictureBox33.TabStop = false;
             // 
-            // label12
+            // UserNameLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(20, 20);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 27);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "UserName";
+            this.UserNameLabel.AutoSize = true;
+            this.UserNameLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserNameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.UserNameLabel.Location = new System.Drawing.Point(20, 20);
+            this.UserNameLabel.Name = "UserNameLabel";
+            this.UserNameLabel.Size = new System.Drawing.Size(117, 27);
+            this.UserNameLabel.TabIndex = 7;
+            this.UserNameLabel.Text = "UserName";
             // 
             // panel15
             // 
@@ -1051,162 +1105,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(1104, 200);
             this.panel15.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(1372, 786);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 28);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Wyświetl Skrzynkę";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.button2);
-            this.panel16.Controls.Add(this.label20);
-            this.panel16.Controls.Add(this.label19);
-            this.panel16.Controls.Add(this.label18);
-            this.panel16.Controls.Add(this.label17);
-            this.panel16.Location = new System.Drawing.Point(20, 12);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1064, 50);
-            this.panel16.TabIndex = 0;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label17.Location = new System.Drawing.Point(30, 15);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 20);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Nadawca";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label18.Location = new System.Drawing.Point(161, 15);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(77, 20);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Jakiś tytuł";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label19.Location = new System.Drawing.Point(305, 15);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(498, 20);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu m ultr";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label20.Location = new System.Drawing.Point(839, 15);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 20);
-            this.label20.TabIndex = 3;
-            this.label20.Text = "Nadawca";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(950, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Wyświetl";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.button3);
-            this.panel17.Controls.Add(this.label21);
-            this.panel17.Controls.Add(this.label22);
-            this.panel17.Controls.Add(this.label23);
-            this.panel17.Controls.Add(this.label24);
-            this.panel17.Location = new System.Drawing.Point(20, 74);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1064, 50);
-            this.panel17.TabIndex = 5;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(950, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Wyświetl";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label21.Location = new System.Drawing.Point(839, 15);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(73, 20);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Nadawca";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label22.Location = new System.Drawing.Point(305, 15);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(498, 20);
-            this.label22.TabIndex = 2;
-            this.label22.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu m ultr";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label23.Location = new System.Drawing.Point(161, 15);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(77, 20);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Jakiś tytuł";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label24.Location = new System.Drawing.Point(30, 15);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(73, 20);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Nadawca";
             // 
             // panel18
             // 
@@ -1279,17 +1177,587 @@
             this.label28.TabIndex = 0;
             this.label28.Text = "Nadawca";
             // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.button3);
+            this.panel17.Controls.Add(this.label21);
+            this.panel17.Controls.Add(this.label22);
+            this.panel17.Controls.Add(this.label23);
+            this.panel17.Controls.Add(this.label24);
+            this.panel17.Location = new System.Drawing.Point(20, 74);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(1064, 50);
+            this.panel17.TabIndex = 5;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(950, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Wyświetl";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label21.Location = new System.Drawing.Point(839, 15);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(73, 20);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Nadawca";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label22.Location = new System.Drawing.Point(305, 15);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(498, 20);
+            this.label22.TabIndex = 2;
+            this.label22.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu m ultr";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label23.Location = new System.Drawing.Point(161, 15);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 20);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Jakiś tytuł";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label24.Location = new System.Drawing.Point(30, 15);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(73, 20);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Nadawca";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.button2);
+            this.panel16.Controls.Add(this.label20);
+            this.panel16.Controls.Add(this.label19);
+            this.panel16.Controls.Add(this.label18);
+            this.panel16.Controls.Add(this.label17);
+            this.panel16.Location = new System.Drawing.Point(20, 12);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1064, 50);
+            this.panel16.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(950, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Wyświetl";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label20.Location = new System.Drawing.Point(839, 15);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(73, 20);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "Nadawca";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label19.Location = new System.Drawing.Point(305, 15);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(498, 20);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu m ultr";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label18.Location = new System.Drawing.Point(161, 15);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(77, 20);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Jakiś tytuł";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(30, 15);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 20);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Nadawca";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(1372, 786);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 28);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Wyświetl Skrzynkę";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // UserAttributesPanel
+            // 
+            this.UserAttributesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.UserAttributesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserAttributesPanel.Controls.Add(this.label39);
+            this.UserAttributesPanel.Controls.Add(this.label40);
+            this.UserAttributesPanel.Controls.Add(this.button8);
+            this.UserAttributesPanel.Controls.Add(this.AvatarDexterityForceLabel);
+            this.UserAttributesPanel.Controls.Add(this.pictureBox40);
+            this.UserAttributesPanel.Controls.Add(this.label36);
+            this.UserAttributesPanel.Controls.Add(this.label37);
+            this.UserAttributesPanel.Controls.Add(this.button7);
+            this.UserAttributesPanel.Controls.Add(this.AvatarIntelligenceForceLabel);
+            this.UserAttributesPanel.Controls.Add(this.pictureBox39);
+            this.UserAttributesPanel.Controls.Add(this.label33);
+            this.UserAttributesPanel.Controls.Add(this.label34);
+            this.UserAttributesPanel.Controls.Add(this.button6);
+            this.UserAttributesPanel.Controls.Add(this.AvatarHealthForceLabel);
+            this.UserAttributesPanel.Controls.Add(this.pictureBox38);
+            this.UserAttributesPanel.Controls.Add(this.label32);
+            this.UserAttributesPanel.Controls.Add(this.label31);
+            this.UserAttributesPanel.Controls.Add(this.button5);
+            this.UserAttributesPanel.Controls.Add(this.label30);
+            this.UserAttributesPanel.Controls.Add(this.AvatarStrengthForceLabel);
+            this.UserAttributesPanel.Controls.Add(this.pictureBox37);
+            this.UserAttributesPanel.Location = new System.Drawing.Point(430, 287);
+            this.UserAttributesPanel.Name = "UserAttributesPanel";
+            this.UserAttributesPanel.Size = new System.Drawing.Size(457, 220);
+            this.UserAttributesPanel.TabIndex = 16;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label39.ForeColor = System.Drawing.SystemColors.Control;
+            this.label39.Location = new System.Drawing.Point(232, 170);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(213, 27);
+            this.label39.TabIndex = 29;
+            this.label39.Text = "Some DESCRIPTION";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label40.ForeColor = System.Drawing.SystemColors.Control;
+            this.label40.Location = new System.Drawing.Point(153, 170);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(67, 27);
+            this.label40.TabIndex = 28;
+            this.label40.Text = "COST";
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Goldenrod;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button8.Location = new System.Drawing.Point(114, 170);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(27, 27);
+            this.button8.TabIndex = 27;
+            this.button8.Text = "+";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // AvatarDexterityForceLabel
+            // 
+            this.AvatarDexterityForceLabel.AutoSize = true;
+            this.AvatarDexterityForceLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarDexterityForceLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarDexterityForceLabel.Location = new System.Drawing.Point(54, 170);
+            this.AvatarDexterityForceLabel.Name = "AvatarDexterityForceLabel";
+            this.AvatarDexterityForceLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarDexterityForceLabel.TabIndex = 26;
+            this.AvatarDexterityForceLabel.Text = "999";
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
+            this.pictureBox40.Location = new System.Drawing.Point(12, 170);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox40.TabIndex = 25;
+            this.pictureBox40.TabStop = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label36.ForeColor = System.Drawing.SystemColors.Control;
+            this.label36.Location = new System.Drawing.Point(232, 120);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(213, 27);
+            this.label36.TabIndex = 24;
+            this.label36.Text = "Some DESCRIPTION";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label37.ForeColor = System.Drawing.SystemColors.Control;
+            this.label37.Location = new System.Drawing.Point(153, 120);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(67, 27);
+            this.label37.TabIndex = 23;
+            this.label37.Text = "COST";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Goldenrod;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Location = new System.Drawing.Point(114, 120);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(27, 27);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "+";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // AvatarIntelligenceForceLabel
+            // 
+            this.AvatarIntelligenceForceLabel.AutoSize = true;
+            this.AvatarIntelligenceForceLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarIntelligenceForceLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarIntelligenceForceLabel.Location = new System.Drawing.Point(54, 120);
+            this.AvatarIntelligenceForceLabel.Name = "AvatarIntelligenceForceLabel";
+            this.AvatarIntelligenceForceLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarIntelligenceForceLabel.TabIndex = 21;
+            this.AvatarIntelligenceForceLabel.Text = "999";
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
+            this.pictureBox39.Location = new System.Drawing.Point(12, 120);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox39.TabIndex = 20;
+            this.pictureBox39.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label33.ForeColor = System.Drawing.SystemColors.Control;
+            this.label33.Location = new System.Drawing.Point(232, 70);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(213, 27);
+            this.label33.TabIndex = 19;
+            this.label33.Text = "Some DESCRIPTION";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label34.ForeColor = System.Drawing.SystemColors.Control;
+            this.label34.Location = new System.Drawing.Point(153, 70);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(67, 27);
+            this.label34.TabIndex = 18;
+            this.label34.Text = "COST";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Goldenrod;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Location = new System.Drawing.Point(114, 70);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(27, 27);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "+";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // AvatarHealthForceLabel
+            // 
+            this.AvatarHealthForceLabel.AutoSize = true;
+            this.AvatarHealthForceLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarHealthForceLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarHealthForceLabel.Location = new System.Drawing.Point(54, 70);
+            this.AvatarHealthForceLabel.Name = "AvatarHealthForceLabel";
+            this.AvatarHealthForceLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarHealthForceLabel.TabIndex = 16;
+            this.AvatarHealthForceLabel.Text = "999";
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
+            this.pictureBox38.Location = new System.Drawing.Point(12, 70);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox38.TabIndex = 15;
+            this.pictureBox38.TabStop = false;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label32.ForeColor = System.Drawing.SystemColors.Control;
+            this.label32.Location = new System.Drawing.Point(232, 20);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(213, 27);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "Some DESCRIPTION";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label31.ForeColor = System.Drawing.SystemColors.Control;
+            this.label31.Location = new System.Drawing.Point(153, 20);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(67, 27);
+            this.label31.TabIndex = 13;
+            this.label31.Text = "COST";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Goldenrod;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(114, 20);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(27, 27);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "+";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label30.ForeColor = System.Drawing.SystemColors.Control;
+            this.label30.Location = new System.Drawing.Point(118, 20);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(0, 27);
+            this.label30.TabIndex = 11;
+            // 
+            // AvatarStrengthForceLabel
+            // 
+            this.AvatarStrengthForceLabel.AutoSize = true;
+            this.AvatarStrengthForceLabel.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AvatarStrengthForceLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.AvatarStrengthForceLabel.Location = new System.Drawing.Point(54, 20);
+            this.AvatarStrengthForceLabel.Name = "AvatarStrengthForceLabel";
+            this.AvatarStrengthForceLabel.Size = new System.Drawing.Size(48, 27);
+            this.AvatarStrengthForceLabel.TabIndex = 10;
+            this.AvatarStrengthForceLabel.Text = "999";
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
+            this.pictureBox37.Location = new System.Drawing.Point(12, 20);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox37.TabIndex = 1;
+            this.pictureBox37.TabStop = false;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.panel21);
+            this.panel20.Controls.Add(this.label43);
+            this.panel20.Controls.Add(this.pictureBox43);
+            this.panel20.Controls.Add(this.pictureBox42);
+            this.panel20.Controls.Add(this.label42);
+            this.panel20.Controls.Add(this.pictureBox41);
+            this.panel20.Location = new System.Drawing.Point(1284, 95);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(250, 80);
+            this.panel20.TabIndex = 17;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.label44);
+            this.panel21.Controls.Add(this.pictureBox44);
+            this.panel21.Controls.Add(this.pictureBox45);
+            this.panel21.Controls.Add(this.label45);
+            this.panel21.Controls.Add(this.pictureBox46);
+            this.panel21.Location = new System.Drawing.Point(-1, -1);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(250, 80);
+            this.panel21.TabIndex = 20;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label44.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label44.Location = new System.Drawing.Point(192, 52);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(34, 15);
+            this.label44.TabIndex = 18;
+            this.label44.Text = "00:00";
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
+            this.pictureBox44.Location = new System.Drawing.Point(142, 44);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox44.TabIndex = 19;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
+            this.pictureBox45.Location = new System.Drawing.Point(106, 44);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox45.TabIndex = 18;
+            this.pictureBox45.TabStop = false;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label45.ForeColor = System.Drawing.SystemColors.Control;
+            this.label45.Location = new System.Drawing.Point(88, 21);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(145, 20);
+            this.label45.TabIndex = 14;
+            this.label45.Text = "Cobblestone Village";
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
+            this.pictureBox46.Location = new System.Drawing.Point(10, 5);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox46.TabIndex = 0;
+            this.pictureBox46.TabStop = false;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label43.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label43.Location = new System.Drawing.Point(192, 52);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(34, 15);
+            this.label43.TabIndex = 18;
+            this.label43.Text = "00:00";
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
+            this.pictureBox43.Location = new System.Drawing.Point(142, 44);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox43.TabIndex = 19;
+            this.pictureBox43.TabStop = false;
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
+            this.pictureBox42.Location = new System.Drawing.Point(106, 44);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox42.TabIndex = 18;
+            this.pictureBox42.TabStop = false;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label42.ForeColor = System.Drawing.SystemColors.Control;
+            this.label42.Location = new System.Drawing.Point(88, 21);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(145, 20);
+            this.label42.TabIndex = 14;
+            this.label42.Text = "Cobblestone Village";
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
+            this.pictureBox41.Location = new System.Drawing.Point(10, 5);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox41.TabIndex = 0;
+            this.pictureBox41.TabStop = false;
+            // 
+            // LoadingPanel
+            // 
+            this.LoadingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(49)))), ((int)(((byte)(29)))), ((int)(((byte)(14)))));
+            this.LoadingPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LoadingPanel.Controls.Add(this.label1);
+            this.LoadingPanel.Location = new System.Drawing.Point(952, 520);
+            this.LoadingPanel.Name = "LoadingPanel";
+            this.LoadingPanel.Size = new System.Drawing.Size(300, 130);
+            this.LoadingPanel.TabIndex = 18;
+            this.LoadingPanel.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(94, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Loading..";
+            // 
             // UserPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.LoadingPanel);
+            this.Controls.Add(this.panel20);
+            this.Controls.Add(this.UserAttributesPanel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.UserStatsPanel);
             this.Controls.Add(this.panel13);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ChampionInfoPanel);
             this.Controls.Add(this.UserSetPanel);
             this.Controls.Add(this.MenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1308,8 +1776,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.BottomImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BodyArmorImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeadImg)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.ChampionInfoPanel.ResumeLayout(false);
+            this.ChampionInfoPanel.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -1324,21 +1792,21 @@
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillThreePictureBoxTwo)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillTwoPictureBoxTwo)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillOnePictureBoxTwo)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillThreePictureBoxOne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillTwoPictureBoxOne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarSkillOnePictureBoxOne)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AvatarpictureBox)).EndInit();
             this.panel13.ResumeLayout(false);
@@ -1362,19 +1830,37 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
+            this.UserStatsPanel.ResumeLayout(false);
+            this.UserStatsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             this.panel15.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.UserAttributesPanel.ResumeLayout(false);
+            this.UserAttributesPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            this.LoadingPanel.ResumeLayout(false);
+            this.LoadingPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1394,17 +1880,17 @@
         private Panel panel4;
         private Button CloseButton;
         private Button FightBTN;
-        private Panel panel1;
+        private Panel ChampionInfoPanel;
         private Panel panel2;
         private PictureBox AvatarpictureBox;
         private Panel panel5;
         private Panel panel6;
-        private PictureBox pictureBox5;
+        private PictureBox AvatarSkillOnePictureBoxTwo;
         private Panel panel3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private Label label7;
+        private PictureBox AvatarSkillThreePictureBoxOne;
+        private PictureBox AvatarSkillTwoPictureBoxOne;
+        private PictureBox AvatarSkillOnePictureBoxOne;
+        private Label ChampionNameLabel;
         private Panel panel11;
         private PictureBox pictureBox13;
         private Panel panel12;
@@ -1419,17 +1905,17 @@
         private TextBox textBox1;
         private PictureBox pictureBox8;
         private Panel panel9;
-        private Label label5;
+        private Label AvatarSkillThreeForceDesciption;
         private Panel panel10;
-        private Label label6;
-        private PictureBox pictureBox7;
+        private Label AvatarSkillThreeNameLabel;
+        private PictureBox AvatarSkillThreePictureBoxTwo;
         private Panel panel8;
-        private Label label4;
+        private Label AvatarSkillTwoForceDesciption;
         private Panel panel7;
-        private Label label3;
-        private PictureBox pictureBox6;
-        private Label label2;
-        private Label label1;
+        private Label AvatarSkillTwoNameLabel;
+        private PictureBox AvatarSkillTwoPictureBoxTwo;
+        private Label AvatarSkillOneForceDesciption;
+        private Label AvatarSkillOneNameLabel;
         private Panel panel13;
         private PictureBox pictureBox29;
         private PictureBox pictureBox30;
@@ -1451,16 +1937,16 @@
         private PictureBox pictureBox15;
         private PictureBox pictureBox14;
         private PictureBox pictureBox1;
-        private Panel panel14;
-        private Label label16;
+        private Panel UserStatsPanel;
+        private Label AvatarLoseNumberLabel;
         private PictureBox pictureBox36;
-        private Label label15;
+        private Label AvatarWinsNumberLabel;
         private PictureBox pictureBox35;
-        private Label label14;
+        private Label AvatarFightsNumberLabel;
         private PictureBox pictureBox34;
-        private Label label13;
+        private Label AvatarLvLabel;
         private PictureBox pictureBox33;
-        private Label label12;
+        private Label UserNameLabel;
         private Panel panel15;
         private Panel panel18;
         private Button button4;
@@ -1481,5 +1967,41 @@
         private Label label18;
         private Label label17;
         private Button button1;
+        private Panel UserAttributesPanel;
+        private Label label39;
+        private Label label40;
+        private Button button8;
+        private Label AvatarDexterityForceLabel;
+        private PictureBox pictureBox40;
+        private Label label36;
+        private Label label37;
+        private Button button7;
+        private Label AvatarIntelligenceForceLabel;
+        private PictureBox pictureBox39;
+        private Label label33;
+        private Label label34;
+        private Button button6;
+        private Label AvatarHealthForceLabel;
+        private PictureBox pictureBox38;
+        private Label label32;
+        private Label label31;
+        private Button button5;
+        private Label label30;
+        private Label AvatarStrengthForceLabel;
+        private PictureBox pictureBox37;
+        private Panel panel20;
+        private Label label43;
+        private PictureBox pictureBox43;
+        private PictureBox pictureBox42;
+        private Label label42;
+        private PictureBox pictureBox41;
+        private Panel panel21;
+        private Label label44;
+        private PictureBox pictureBox44;
+        private PictureBox pictureBox45;
+        private Label label45;
+        private PictureBox pictureBox46;
+        private Panel LoadingPanel;
+        private Label label1;
     }
 }

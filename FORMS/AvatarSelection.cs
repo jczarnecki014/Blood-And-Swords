@@ -30,7 +30,7 @@ namespace Blood_and_Swords.FORMS
             foreach(Avatar avatar in avatars)
             {
                 PictureBox avatarIcon = new PictureBox();
-                avatarIcon.ImageLocation = @"..\..\.." + avatar.AvatarImgSrc;
+                avatarIcon.ImageLocation = @"..\..\..\IMG\Avatars\70x70\" + avatar.AvatarImgSrc;
                 avatarIcon.Size = new Size(110,110);
                 avatarIcon.Location = new Point(Xmargin,Ymargin);
                 avatarIcon.Name = avatar.AvatarId.ToString();
