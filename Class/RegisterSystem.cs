@@ -27,7 +27,7 @@
           bool CheckIfEmailsExistInSystem()
           {
             dbAcces newSql = new dbAcces();
-            return newSql.CheckUserExist(this.Email); ;
+            return newSql.CheckUserExist(this.Email);
           }
           return CheckIfEmailAreCorrect() && !CheckIfEmailsExistInSystem()?true:false;
         }

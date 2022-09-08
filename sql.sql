@@ -180,4 +180,86 @@ as
 begin
 	select UserPassword From dbo.Users Where UserName = @EnteredUserName;
 end
+-------------------
+Create procedure dbo.GetUser
+	@EnteredUserName varchar(25)
+as
+begin
+	select * From Users where UserName = @EnteredUserName;
+end
+--------------------
+Create procedure dbo.GetUserAttributes
+	@EnteredAttributesId int
+as
+begin
+	select * From Attributes Where UserId = @EnteredAttributesId;
+end
+-------------------
+Create procedure dbo.GetUserStats
+	@EnteredStatsId int
+as
+begin
+	select * From Stats Where UserId = @EnteredStatsId
+end
+-------------------
+Create procedure GetDefItem
+	@EnteredDefItemId int
+as
+begin
+	select * From DefItems Where ItemId = @EnteredDefItemId
+end
+-------------------
+Create procedure GetWeaponItem
+	@EnteredWeaponItemId int
+as
+begin
+	select * From WeaponItem Where ItemId = @EnteredWeaponItemId;
+end
+-------------------
+Create procedure GetUserSets
+	@EnteredSetId int
+as
+begin 
+	select * From Sets Where UserId = @EnteredSetId
+end
+-------------------
+Create procedure CheckUserExist
+	@EnteredName varchar(50)
+as
+begin 
+	select count(UserEmail) from Users where UserEmail= @EnteredName OR UserName = @EnteredName
+end
+-------------------
+Create procedure InsertNewUser
+	--Add user record
+	@EnteredUserName varchar(50),
+	@EnteredPassword varchar(50),
+	@EnteredUserEmail varchar(50),
+	@EnteredChampionName varchar(50),
+	@EnteredChampionMoney int,
+	@EnteredChampionLevel int,
+	@EnteredAvatarId int,
+	--Add attributes record
+	@EnteredChampionHealth int,
+	@EnteredChampionDexterity int,
+	@EnteredChampionStrength int,
+	@EnteredChampionInteligence int,
+	--Add stats record
+	@EnteredChampionWins int,
+	@EnteredChampionLose int,
+	@EnteredChampionFights int
 
+as
+begin
+	--New record in Users Table
+	Insert into dbo.Users Values (@EnteredUserName,@EnteredPassword,@EnteredUserEmail,@EnteredChampionName,@EnteredChampionMoney,@EnteredChampionLevel,@EnteredAvatarId)
+	--Gets assigned ID for user record by Identity
+	DECLARE @SelectedUserId AS INTEGER;
+	SELECT @SelectedUserId = IDENT_CURRENT('dbo.Users')
+	--New record in Attributes Table
+	Insert into dbo.Attributes Values (@SelectedUserId,@EnteredChampionHealth,@EnteredChampionDexterity,@EnteredChampionStrength,@EnteredChampionInteligence)
+	--New record in Stats Table
+	Insert into dbo.Stats Values(@SelectedUserId,@EnteredChampionWins,@EnteredChampionLose,@EnteredChampionFights)
+	--New record in Sets Table
+	Insert into dbo.Sets(UserId) Values(@SelectedUserId)
+end

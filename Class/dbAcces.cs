@@ -22,7 +22,7 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             { 
-                VolatileUser volatileUser = connection.QuerySingle<VolatileUser>($"select * From Users where UserName = '{userName}'"); // tu ma byc procedura
+                VolatileUser volatileUser = connection.QuerySingle<VolatileUser>($"GetUser '{userName}'");
                 return volatileUser.CreateStableUser();
             }
         }
@@ -30,7 +30,7 @@ using System.Data.SqlClient;
         {
              using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             { 
-                Attributes userAttributes = connection.QuerySingle<Attributes>($"select * From Attributes Where UserId = {attributesId}"); // tu ma byc procedura
+                Attributes userAttributes = connection.QuerySingle<Attributes>($"GetUserAttributes '{attributesId}'");
                 return userAttributes;
             }
         }
@@ -39,7 +39,7 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             { 
-                Stats userStats = connection.QuerySingle<Stats>($"select * From Stats Where UserId = {statsId}");// tu ma byc procedura
+                Stats userStats = connection.QuerySingle<Stats>($"GetUserStats '{statsId}'");// tu ma byc procedura
                 return userStats;
             }
         }
@@ -50,7 +50,7 @@ using System.Data.SqlClient;
                 DefItems defItem;
                 try
                 {
-                    defItem = connection.QuerySingle<DefItems>($"select * From DefItems Where ItemId = {defItemId}");
+                    defItem = connection.QuerySingle<DefItems>($"GetDefItem '{defItemId}'");
                 }
                 catch (InvalidOperationException)
                 {
@@ -67,7 +67,7 @@ using System.Data.SqlClient;
                 WeaponItems weaponItem;
                 try
                 {
-                     weaponItem = connection.QuerySingle<WeaponItems>($"select * From WeaponItem Where ItemId = {weaponItemId}");
+                     weaponItem = connection.QuerySingle<WeaponItems>($"GetWeaponItem '{weaponItemId}'");
                 }
                 catch (InvalidOperationException)
                 {
@@ -81,7 +81,7 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             { 
-                VolatileSets userSet = connection.QuerySingle<VolatileSets>($"select * From Sets Where UserId = {setId}");// tu ma byc procedura
+                VolatileSets userSet = connection.QuerySingle<VolatileSets>($"GetUserSets '{setId}'");
                 return userSet.CreateStableSet();
             }
         }
@@ -90,7 +90,7 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             {
-               bool userExist = connection.ExecuteScalar<bool>($"select count(UserEmail) from Users where UserEmail='{name}' OR UserName = '{name}'");
+               bool userExist = connection.ExecuteScalar<bool>($"CheckUserExist '{name}'");
                return userExist;
             }
         }
@@ -98,17 +98,10 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             {
-               connection.Execute($"Insert into dbo.Users Values ('{user.UserName}','{password}','{user.UserEmail}','{user.ChampionName}'," +
-               $"{user.ChampionMoney},{user.ChampionLevel},{user.Avatar.AvatarId})"); //add new user to table
 
-               int UserId = (connection.QuerySingle<int>($"select UserId from Users where UserName = '{user.UserName}'"));
-
-               connection.Execute($"Insert into dbo.Attributes Values ({UserId},{user.ChampionAttributes.Health},{user.ChampionAttributes.Dexterity}," +
-               $"{user.ChampionAttributes.Strength}, {user.ChampionAttributes.Inteligence})");//add attributes record
-
-               connection.Execute($"Insert into dbo.Stats Values ({UserId} , {user.ChampionStats.Wins} , {user.ChampionStats.Lose} , {user.ChampionStats.Fights})"); // add stats record
-
-               connection.Execute($"Insert into dbo.Sets(UserId) Values ({UserId})"); // add Sets record
+                connection.Execute($"InsertNewUser '{user.UserName}','{password}','{user.UserEmail}','{user.ChampionName}',{user.ChampionMoney},{user.ChampionLevel},{user.Avatar.AvatarId}," +
+                $"{user.ChampionAttributes.Health},{user.ChampionAttributes.Dexterity},{user.ChampionAttributes.Strength},{user.ChampionAttributes.Inteligence}," +
+                $"{user.ChampionStats.Wins},{user.ChampionStats.Lose},{user.ChampionStats.Fights}");
             }
         }
         public List<Avatar> GetAvatars()
@@ -116,7 +109,7 @@ using System.Data.SqlClient;
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             {
                List<Avatar>avatars = new List<Avatar>();
-               List<VolatileAvatar> volatileAvatars = connection.Query<VolatileAvatar>("Select * From dbo.Avatars").ToList();
+               List<VolatileAvatar> volatileAvatars = connection.Query<VolatileAvatar>("GetAvatars").ToList();
                foreach(VolatileAvatar avatar in volatileAvatars)
                {
                    avatars.Add(avatar.GetStableAvatar());
@@ -130,7 +123,7 @@ using System.Data.SqlClient;
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             {
                MessageBox.Show(avatarId.ToString());
-               VolatileAvatar volatileAvatars = connection.QuerySingle<VolatileAvatar>($"Select * From dbo.Avatars WHERE AvatarId = {avatarId}");
+               VolatileAvatar volatileAvatars = connection.QuerySingle<VolatileAvatar>($"GetAvatar '{avatarId}'");
                return volatileAvatars.GetStableAvatar();
             }
         }
@@ -138,7 +131,8 @@ using System.Data.SqlClient;
         {
              using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
              {
-               Skill avatarSkill = connection.QuerySingle<Skill>($"Select * From dbo.Skills Where SkillId = {SkillId}");
+                MessageBox.Show("tutaj");
+               Skill avatarSkill = connection.QuerySingle<Skill>($"GetAvatarSkill '{SkillId}'");
                return avatarSkill;
              }  
         }
