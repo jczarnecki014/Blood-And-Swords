@@ -326,6 +326,7 @@
             // DeffenceImg
             // 
             this.DeffenceImg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DeffenceImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("DeffenceImg.ErrorImage")));
             this.DeffenceImg.Image = ((System.Drawing.Image)(resources.GetObject("DeffenceImg.Image")));
             this.DeffenceImg.Location = new System.Drawing.Point(225, 461);
             this.DeffenceImg.Name = "DeffenceImg";
@@ -335,6 +336,7 @@
             // 
             // WeaponImg
             // 
+            this.WeaponImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("WeaponImg.ErrorImage")));
             this.WeaponImg.Image = ((System.Drawing.Image)(resources.GetObject("WeaponImg.Image")));
             this.WeaponImg.Location = new System.Drawing.Point(26, 461);
             this.WeaponImg.Name = "WeaponImg";
@@ -344,6 +346,7 @@
             // 
             // RingImg
             // 
+            this.RingImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("RingImg.ErrorImage")));
             this.RingImg.Image = ((System.Drawing.Image)(resources.GetObject("RingImg.Image")));
             this.RingImg.Location = new System.Drawing.Point(237, 209);
             this.RingImg.Name = "RingImg";
@@ -353,6 +356,7 @@
             // 
             // GloveImg
             // 
+            this.GloveImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("GloveImg.ErrorImage")));
             this.GloveImg.Image = ((System.Drawing.Image)(resources.GetObject("GloveImg.Image")));
             this.GloveImg.Location = new System.Drawing.Point(16, 209);
             this.GloveImg.Name = "GloveImg";
@@ -362,6 +366,7 @@
             // 
             // BottomImg
             // 
+            this.BottomImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BottomImg.ErrorImage")));
             this.BottomImg.Image = ((System.Drawing.Image)(resources.GetObject("BottomImg.Image")));
             this.BottomImg.Location = new System.Drawing.Point(129, 338);
             this.BottomImg.Name = "BottomImg";
@@ -371,6 +376,7 @@
             // 
             // BodyArmorImg
             // 
+            this.BodyArmorImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BodyArmorImg.ErrorImage")));
             this.BodyArmorImg.Image = ((System.Drawing.Image)(resources.GetObject("BodyArmorImg.Image")));
             this.BodyArmorImg.Location = new System.Drawing.Point(129, 209);
             this.BodyArmorImg.Name = "BodyArmorImg";
@@ -381,6 +387,7 @@
             // HeadImg
             // 
             this.HeadImg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HeadImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("HeadImg.ErrorImage")));
             this.HeadImg.Image = ((System.Drawing.Image)(resources.GetObject("HeadImg.Image")));
             this.HeadImg.Location = new System.Drawing.Point(129, 79);
             this.HeadImg.Name = "HeadImg";

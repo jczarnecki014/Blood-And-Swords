@@ -49,6 +49,9 @@ namespace Blood_and_Swords.FORMS
                 if(inputsCorrectnes)
                 {
                     newUser.RegisterUser();
+                    this.Close();
+                    loginForm.Show();
+                    new SuccesRegisterInfoForm().Show();
                 }
                 else{
                     MessageBox.Show("The form was fill in bad way. Please make sure that passwords are same  or email syntax is mistake free ");
@@ -59,7 +62,7 @@ namespace Blood_and_Swords.FORMS
         public void setAvatar(Avatar avatar)
         {
             SelectedAvatar = avatar;
-            AvatarFacePictureBox.ImageLocation = @"..\..\.." + avatar.AvatarImgSrc;
+            AvatarFacePictureBox.ImageLocation = @"..\..\..\IMG\Avatars\70x70\" + avatar.AvatarImgSrc;
             AvatarStoryTextBox.Text = avatar.AvatarStory;
         }
 

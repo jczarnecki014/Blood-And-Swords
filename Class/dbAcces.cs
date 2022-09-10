@@ -122,7 +122,6 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             {
-               MessageBox.Show(avatarId.ToString());
                VolatileAvatar volatileAvatars = connection.QuerySingle<VolatileAvatar>($"GetAvatar '{avatarId}'");
                return volatileAvatars.GetStableAvatar();
             }
@@ -131,7 +130,6 @@ using System.Data.SqlClient;
         {
              using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
              {
-                MessageBox.Show("tutaj");
                Skill avatarSkill = connection.QuerySingle<Skill>($"GetAvatarSkill '{SkillId}'");
                return avatarSkill;
              }  
