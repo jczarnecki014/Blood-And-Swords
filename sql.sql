@@ -82,7 +82,6 @@ create table WeaponItem
 	ItemDexterity int,
 	ItemStrength int,
 	ItemInteligence int,
-	ItemRequireLevel int,
 	PRIMARY KEY (ItemId)
 );
 
@@ -108,6 +107,14 @@ Create table Skills
 	SkillForce float
 );
 
+Create table SoundTrack(
+	IdMusic int IDENTITY(1,1),
+	MusicTitle varchar(150),
+	MusicSecondLength int,
+	MusicBackGroundSrc varchar(150),
+	MusicSource varchar(150)
+);
+
 -- INSERTS--
 
 Insert into dbo.DefItemAbility VALUES 
@@ -123,7 +130,7 @@ Insert into dbo.DefItems VALUES
 ('Forest Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Forest_Armor.png', 800, 5200, 360, 30, 30),
 ('Guard Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Guard_Armor.png', 500, 3600, 50, 160, 50),
 ('Leather Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Leather_Armor.png', 150, 2200, 50,80,50),
-('Magic Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Magic_Armor.png', 800, 4200, 60, 30, 420),
+('Magic Armor','BodyArmor','the will be IdMsome desciption','\IMG\DefItems\Armors\Magic_Armor.png', 800, 4200, 60, 30, 420),
 ('Strengthened Leather Armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\Strengthened_Leather_Armor.png', 300, 3200, 80,120,80),
 ('Troll armor','BodyArmor','the will be some desciption','\IMG\DefItems\Armors\troll_armor.png', 800, 4300,20,200,50),
 --Boots
@@ -160,13 +167,22 @@ Insert into dbo.DefItems VALUES
 ('Magiczny pierścień','Ring','the will be some desciption','\IMG\DefItems\Ring\magic_ring.jpg', 100, 10,10,10,150),
 ('Pierścień wody','Ring','the will be some desciption','\IMG\DefItems\Ring\wather_ring.jpg', 100, 70,80,100,110),
 --shield
-('Smocza tarcza','Shield','the will be some desciption','\IMG\DefItems\Ring\Dragon_shield.jpg', 900, 1700,110,200,160),
-('Tarcza krasnoluda','Shield','the will be some desciption','\IMG\DefItems\Ring\Dwraf_shield.jpg', 500, 700,70,130,50),
-('Tarcza gladiatora','Shield','the will be some desciption','\IMG\DefItems\Ring\Gladiator_shield.jpg', 700, 700,30,140,50),
-('Tarcza Paladyna','Shield','the will be some desciption','\IMG\DefItems\Ring\Paladin_shield.jpg', 500, 1000,80,170,150),
-('Wzmocniona tarcza','Shield','the will be some desciption','\IMG\DefItems\Ring\Strengthened_shield.jpg', 180, 125,50,70,25),
-('Zwykła tarcza','Shield','the will be some desciption','\IMG\DefItems\Ring\Usual_shield.jpg', 130, 110,40,50,25),
-('Tarcza z roga trola','Shield','the will be some desciption','\IMG\DefItems\Ring\Troll_shield.jpg', 550, 610,70,120,50);
+('Smocza tarcza','Shield','the will be some desciption','\IMG\DefItems\Shield\Dragon_shield.jpg', 900, 1700,110,200,160),
+('Tarcza krasnoluda','Shield','the will be some desciption','\IMG\DefItems\Shield\Dwraf_shield.jpg', 500, 700,70,130,50),
+('Tarcza gladiatora','Shield','the will be some desciption','\IMG\DefItems\Shield\Gladiator_shield.jpg', 700, 700,30,140,50),
+('Tarcza Paladyna','Shield','the will be some desciption','\IMG\DefItems\Shield\Paladin_shield.jpg', 500, 1000,80,170,150),
+('Wzmocniona tarcza','Shield','the will be some desciption','\IMG\DefItems\Shield\Strengthened_shield.jpg', 180, 125,50,70,25),
+('Zwykła tarcza','Shield','the will be some desciption','\IMG\DefItems\Shield\Usual_shield.jpg', 130, 110,40,50,25),
+('Tarcza z roga trola','Shield','the will be some desciption','\IMG\DefItems\Shield\Troll_shield.jpg', 550, 610,70,120,50);
+
+Insert into dbo.Weaponitem Values 
+('Armageddon','there will be some desciption','\IMG\Weapon\StrengthWeapon\Armageddon.png',320,600, 60,200,60),
+('Boskie Światło','there will be some desciption','\IMG\Weapon\StrengthWeapon\Divine_Light.jpg',410,1200, 100,220,140),
+('Wilk, Żniwiarz Chaosu','there will be some desciption','\IMG\Weapon\StrengthWeapon\Wolf_Reaper_of_Chaos.jpg',710,2700, 150,320,150),
+('Porzucony Diamentowy Młot Strażnika','there will be some desciption','\IMG\Weapon\StrengthWeapon\Forsaken_Diamond_Guardian.jpg',480,1500, 90,260,110),
+('Espada','there will be some desciption','\IMG\Weapon\StrengthWeapon\Espada.jpg',350,1000, 60,220,30),
+('Królewska Chwała','there will be some desciption','\IMG\Weapon\StrengthWeapon\Royal_glory.jpg',380,1600, 120,290,140),
+('Ogromny Strażnik','there will be some desciption','\IMG\Weapon\StrengthWeapon\Massive_Guardian.jpg',330,800, 70,220,95),
 
 Insert into Avatars 
 Values 
@@ -213,6 +229,13 @@ Values
 ('Związane nogi','Łucznicy słyną z świetnego sprytu i zręczności. Są zwinni i niezauważeni. Mimo, że walczą z dystansu potrafią podejść naprawdę blisko swojego przeciwnika aby wyrządzić mu psikusa. Łucznik zakrada się do przeciwnika i w ułamku sekundy związuje mu buty tworząc pajęczynę z jego sznurówek','IMG\Skils\Hunter\Zwiazane_nogi.png','Dexterity', 2.1),
 ('Wszyscy razem','Łucznicy kryją się wszędzie nawet nie wiesz jak wielu może ich być w twojej okolicy. Łucznik głośnym krzykiem wzywa swoich przyjacieli i wszscy razem jednym tępem zasypują przeciwników gradem strzał','IMG\Skils\Hunter\Wszyscy_razem.png','Dexterity', 1.8);
 
+
+Insert into SoundTrack Values 
+('loginPanelSound',121,'Null','..\..\..\SoundTrack\loginPanelSound.wav'),
+('Cobblestone Village',258,'..\..\..\IMG\Sounds\SoundBG\medevial_music.png','..\..\..\SoundTrack\Cobblestone_Vlillage.wav'),
+('Dragon Age：Tavern song',201,'..\..\..\IMG\Sounds\SoundBG\Dragon_Age_Tavern_song.jpg','..\..\..\SoundTrack\Enchanter_Dragon_Age_Inquisition_OST_Tavern_song.wav'),
+('WOW-Taverns of Azeroth',121,'..\..\..\IMG\Sounds\SoundBG\World_of_warcraft-Taverns_Of_Azeroth.jpg','..\..\..\SoundTrack\World_of_Warcraft-Taverns_of_Azeroth.wav');
+('Gothic-Old Camp',171,'..\..\..\IMG\Sounds\SoundBG\gothic_old_camp.jpg','..\..\..\SoundTrack\Gothic_Old_Camp.wav');
 
 --Creating procedures 
 
@@ -324,4 +347,10 @@ CREATE PROCEDURE GetAvatarSkill
 as
 begin
 	Select * From dbo.Skills Where SkillId = @EnteredAvatarSkillId;
+end
+-------------------
+CREATE PROCEDURE GetSoundTracks
+as
+begin
+	Select * From dbo.SoundTrack;
 end

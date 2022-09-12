@@ -21,13 +21,12 @@ namespace Blood_and_Swords.FORMS
 
         private void FighArena_Load(object sender, EventArgs e)
         {
-            new BackgroundMusic("FightPanelSound");
+            
         }
 
         private void SkipFightButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            new UserPanelForm(user).Show();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)

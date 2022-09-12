@@ -10,7 +10,11 @@ namespace Blood_and_Swords
 
         private void loginForm_Load(object sender, EventArgs e)
         {
-            new BackgroundMusic("loginPanelSound");
+            List<Sounds>TrackList = new dbAcces().GetTracks();
+
+            new Player(TrackList); //create player and inicjalize static varable trackPlayer
+            Player.trackPlayer.SetTrack(0); //Number 0-X Index in List of tracks
+            Player.trackPlayer.Play();
         }
 
         private void CreatNewAccountButton_Click(object sender, EventArgs e)

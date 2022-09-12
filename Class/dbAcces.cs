@@ -134,5 +134,14 @@ using System.Data.SqlClient;
                return avatarSkill;
              }  
         }
+        public List<Sounds> GetTracks()
+        {
+            using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
+            {
+               List<Sounds>tracks = new List<Sounds>();
+               tracks = connection.Query<Sounds>("GetSoundTracks").ToList();
+               return tracks;
+            }
+        }
     }
 

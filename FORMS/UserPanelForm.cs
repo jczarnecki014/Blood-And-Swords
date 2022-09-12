@@ -13,12 +13,15 @@ namespace Blood_and_Swords.FORMS
     public partial class UserPanelForm : Form
     {
         User user;
+        Panel PlayerPanel;
+        private int i;
         public UserPanelForm(User user)
         {
             InitializeComponent();
             ArrmorPictureBoxHoverEfect();
             this.user = user;
-            new BackgroundMusic("UserPanelForm");
+            Player.trackPlayer.SetTimer(PlayerTimer);
+            PlayerTimer.Start();
         }
         private void ArrmorPictureBoxHoverEfect()
         {
@@ -42,7 +45,15 @@ namespace Blood_and_Swords.FORMS
         private void UserPanelForm_Load(object sender, EventArgs e)
         {   
 
+            Player.trackPlayer.SetTrack(1); //Number 0-X Index in List of tracks
+            PlayerPanel = Player.trackPlayer.GetPlayerPanel(new Point(1284,95));
+            Player.trackPlayer.Play();
             LoadingPanel.Visible = true; 
+            //Create Panel
+
+
+            this.Controls.Add(PlayerPanel);
+
 
             //Set ChampionInfoPanel
             AvatarpictureBox.ImageLocation = @"..\..\..\IMG\Avatars\200x200\" + user.Avatar.AvatarImgSrc;
@@ -87,6 +98,7 @@ namespace Blood_and_Swords.FORMS
             RingImg.ImageLocation = @"..\..\.." + user.ChampionSet.RingId.ItemImgSrc;
             BottomImg.ImageLocation = @"..\..\.." + user.ChampionSet.BottomId.ItemImgSrc;
             DeffenceImg.ImageLocation = @"..\..\.." + user.ChampionSet.DefenceWeapon.ItemImgSrc;
+            WeaponImg.ImageLocation = @"..\..\.." + user.ChampionSet.Weapon.ItemImgSrc;
             
             MessageBox.Show($"Witaj {user.UserName}");
             LoadingPanel.Visible = false;
@@ -101,5 +113,11 @@ namespace Blood_and_Swords.FORMS
             this.Close();
             new FighArena(user).Show();
         }
+
+        private void PlayerTimer_Tick(object sender, EventArgs e)
+        {
+            Player.trackPlayer.PlayerTimer();
+        }
+        
     }
 }
