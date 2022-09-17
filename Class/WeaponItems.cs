@@ -1,5 +1,5 @@
 ﻿
-    public class WeaponItems
+    public class WeaponItems:Iitems
     {
         public string ItemName{ get; set; }
         public string ItemDescribe{ get; set; }
@@ -8,6 +8,8 @@
         public int ItemHealth{ get; set; }
         public int ItemDexterity{ get; set; }
         public int ItemStrength{ get; set; }
-        public int ItemRequireLevel { get; set; }
+        public int ItemIntelligence{ get; set; }
+        public int ItemLevel { get; set;}
+        public float ItemDropType { get; set;}
     }
 

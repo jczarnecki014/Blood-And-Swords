@@ -86,10 +86,12 @@ namespace Blood_and_Swords.FORMS
             AvatarLoseNumberLabel.Text = user.ChampionStats.Lose.ToString();
 
             //Set user attributes
-            AvatarStrengthForceLabel.Text = user.ChampionAttributes.Strength.ToString();
-            AvatarHealthForceLabel.Text = user.ChampionAttributes.Health.ToString();
-            AvatarIntelligenceForceLabel.Text = user.ChampionAttributes.Inteligence.ToString();
-            AvatarDexterityForceLabel.Text = user.ChampionAttributes.Dexterity.ToString();
+            Attributes summaryUserAttributes = Attributes.GetSummaryAttributes(user);
+            AvatarStrengthForceLabel.Text = summaryUserAttributes.Strength.ToString();
+            MessageBox.Show(summaryUserAttributes.Health.ToString());
+            AvatarHealthForceLabel.Text = summaryUserAttributes.Health.ToString();
+            AvatarIntelligenceForceLabel.Text = summaryUserAttributes.Inteligence.ToString();
+            AvatarDexterityForceLabel.Text = summaryUserAttributes.Dexterity.ToString();
 
             //Set user Sets ( equipment )
             HeadImg.ImageLocation = @"..\..\.." + user.ChampionSet.HelmetId.ItemImgSrc;
@@ -97,8 +99,8 @@ namespace Blood_and_Swords.FORMS
             GloveImg.ImageLocation = @"..\..\.." + user.ChampionSet.GlovesId.ItemImgSrc;
             RingImg.ImageLocation = @"..\..\.." + user.ChampionSet.RingId.ItemImgSrc;
             BottomImg.ImageLocation = @"..\..\.." + user.ChampionSet.BottomId.ItemImgSrc;
-            DeffenceImg.ImageLocation = @"..\..\.." + user.ChampionSet.DefenceWeapon.ItemImgSrc;
-            WeaponImg.ImageLocation = @"..\..\.." + user.ChampionSet.Weapon.ItemImgSrc;
+            DeffenceImg.ImageLocation = @"..\..\.." + user.ChampionSet.DefenceWeaponId.ItemImgSrc;
+            WeaponImg.ImageLocation = @"..\..\.." + user.ChampionSet.WeaponId.ItemImgSrc;
             
             MessageBox.Show($"Witaj {user.UserName}");
             LoadingPanel.Visible = false;
