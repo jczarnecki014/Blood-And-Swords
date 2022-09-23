@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,10 @@ using System.Threading.Tasks;
         public static bool Start(string userName, string userPassword)
         {
             dbAcces newSql = new dbAcces();
-            if(userPassword == newSql.GetUserPassword(userName))
+
+            Cryptography ToHashedPassword = new Cryptography(userPassword,userName);
+            
+            if(ToHashedPassword.GetHash() == newSql.GetUserPassword(userName))
             {
                 return true;
             }
@@ -18,6 +22,7 @@ using System.Threading.Tasks;
             {
                 return false;
             }
+            
         }
     }
 

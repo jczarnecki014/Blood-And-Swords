@@ -98,7 +98,6 @@ using System.Data.SqlClient;
         {
             using(IDbConnection connection = new SqlConnection(ConnectionStringHelper.CnnString("BasSql")))
             {
-
                 connection.Execute($"InsertNewUser '{user.UserName}','{password}','{user.UserEmail}','{user.ChampionName}',{user.ChampionMoney},{user.ChampionLevel},{user.Avatar.AvatarId}," +
                 $"{user.ChampionAttributes.Health},{user.ChampionAttributes.Dexterity},{user.ChampionAttributes.Strength},{user.ChampionAttributes.Inteligence}," +
                 $"{user.ChampionStats.Wins},{user.ChampionStats.Lose},{user.ChampionStats.Fights}");

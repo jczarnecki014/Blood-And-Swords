@@ -53,7 +53,8 @@
             int newUserStartLevel = 1;
             User newUser = new User(UserName,Email,ChampName,newUserStartMoney,newUserStartLevel,newAttribute,newStats,newSet,UserAvatar);
             dbAcces newSql = new dbAcces();
-            newSql.InsertNewUser(newUser,Password);
+            Cryptography toHashedPassword = new Cryptography(Password,UserName);
+            newSql.InsertNewUser(newUser,toHashedPassword.GetHash());
         }
 
 }
